@@ -1,0 +1,547 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Truspace | CoWorking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Application, Clean, Saas, Dashboard, Bootstrap4" />
+        <meta content="Shreethemes" name="author" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/truspace/apple-touch-icon.png">
+        <!-- Bootstrap css -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+      
+        <link rel="stylesheet" href="css/unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+        <!-- Icons -->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" /> 
+        <!-- Animation -->
+        <link href="css/animate.css" rel="stylesheet" />
+        <link href="css/animations-delay.css" rel="stylesheet" />
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"/> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Main css File -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+     
+        <!-- Loader Start -->
+        <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="images/truspace/logo.png" height="100" class="d-block mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Loader End -->
+
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky">
+            <div class="container">
+                <!-- Logo container-->
+                <div>
+                    <a class="logo">
+                        <img src="images/truspace/logo.png" class="l-dark" height="46" alt="">
+                        <img src="images/truspace/logo.png" class="l-light" height="66" alt="">
+                    </a>              
+                <div class="buy-button">
+                  <button class="btn btn-primary book-seat" class="open-button" onclick="openForm()">Book A Tour</button>
+                  </div>
+                  <!--book a tour form-->
+                  <div class="alert">Your Information has been sent</div>
+                  <div class="form-popup" id="myForm">
+                    <form action="" class="form-container">
+                        
+                      <h3>BOOK A TOUR</h3>
+                        <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                        <label class="font-weight-bold" for="name">Full Name :</label>
+                                        <input name="name" id="Fname" type="text" class="form-control bg-white" required placeholder="Enter your full name">
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                        <label class="font-weight-bold" for="name2">Company Name:</label>
+                                        <input name="name" id="occupation" type="text" class="form-control bg-white" required placeholder="Enter your company name">
+                                    </div>
+                                </div><!--end col-->
+
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="font-weight-bold" for="number">Email Address : </label>
+                                        <input name="name" id="occupation" type="email" class="form-control bg-white" required placeholder="Enter your email address">
+                                    </div> 
+                                </div><!--end col--> 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="font-weight-bold">I need a space for :</label>
+                                        <select class="form-control custom-select bg-white" id="spaceInterest">
+                                            <option selected value="Findworkspace">-Select-</option>
+                                            <option value="1person" > 1 person</option>
+                                            <option value="2-4people" > 2-4 people</option>
+                                            <option value="5-9people" > 5-9 people</option>
+                                            <option value="10plus" > 10+ people</option>
+                                        </select>
+                                    </div>
+                                </div><!--end col-->
+                                
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="font-weight-bold" for="number">Phone Number : </label>
+                                        <input name="number" type="number" class="form-control bg-white" id="phone" required placeholder="Enter your phone number">
+                                    </div> 
+                                </div><!--end col--> 
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="font-weight-bold" for="number">Pick a date:</label>
+                                        <input name="date" type="date" class="form-control bg-white" id="phone" required placeholder="Pick a date for the tour">
+                                    </div> 
+                                </div><!--end col--> 
+                      </div>
+                      <button type="submit" class="btn">Submit</button>
+                      <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
+                    </form>
+                
+                  
+                     
+                  </div>
+                  
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
+                    </div>
+                </div>
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu nav-light" id="navbar-nav ml-auto">
+                        <li class="has-submenu">
+                            <a href="index.html">HOME</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a  class="nav-link scrollTo" href="#who-we-are">WHO WE ARE</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="page-pricing.html">PLANS</a>
+                           
+                        </li>
+                        <li class="nav-item">
+                            <a  class="nav-link scrollTo" href="#services">SERVICES</a>
+                        </li>
+                    </ul><!--end navigation menu-->
+                    <div class="buy-menu-btn d-none">
+                        <a href="" class="btn btn-primary">Book A Tour</a>
+                    </div><!--end login button-->
+                    
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+
+        <!-- Hero Start -->
+        <section class="home-slider position-relative">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item align-items-center active" data-bs-interval="10000" style="background-image:url('images/truspace/hero-image2.png');">
+                        <!-- <div class="bg-overlay"></div> -->
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1 class="display-4 font-weight-bold mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">Co-working Creative Space</h1>
+                                        <!-- <p class="para-desc text-white-50 para-dark mx-auto animated fadeInUpBig animation-delay-7"><span class="font-weight-bold">Truspace</span> offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity</p>
+                                        -->
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </div><!--end carousel item-->
+
+                    <div class="carousel-item align-items-center" data-bs-interval="20000" style="background-image:url('images/truspace/hero-image1.png');">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1 class="display-4 font-weight-bold mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">Business Space Rental</h1>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </div><!--end carousel item-->
+
+                    <div class="carousel-item align-items-center " style="background-image:url('images/truspace/hero-image3.png');">
+                        <div class="bg-overlay"></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12 text-center">
+                                    <div class="title-heading mt-4">
+                                        <h1 class="display-4 font-weight-bold mb-3 text-white title-dark animated fadeInUpBig animation-delay-3">Meeting Conference Room</h1>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
+                        </div><!--end container-->
+                    </div><!--end carousel item-->
+                </div><!--end carousel inner-->
+            </div><!--end carousel-->
+        </section><!--end section-->
+        <!-- Hero End -->
+
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-light">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+        <!--Shape End-->
+<section class="section" id="who-we-are"> 
+                <div class="container">
+                   <div class="row align-items-center">
+                           <div class="col-lg-7 col-md-6">
+                                <div class="section-title ml-lg-5;">
+                                    <h3 class="title mb-4">Co-Working with <br> Diligence
+                                        <span aria-hidden="true" class="css-1x6b7sj">.</span> </h4>
+                                        <p class="text-muted"><span class="font-weight-bold">Truspace </span> is a fully serviced coworking space by Truckka Logistics Ltd.
+                                            <br>  We provide individuals and businesses with a comfortable workspace, <br>easy access to business services and networking opportunities.</p>
+                                    <p class="text-muted">We offer fully furnished, flexible and cost-effective workspaces in a calm and clutter-free environment with the right amount of support and flexibility to help you and your business flourish and grow.<br/> Our meeting spaces can be booked for quick meetings or interviews and our central hub space can be used for trainings and events at weekends.</p>
+                                    <ul class="list-unstyled feature-list text-muted">
+                                        <li><i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Our doors are open to entrepreneurs, techpreneurs, freelancers, software developers, social entrepreneurs, knowledge workers, start-ups, project managers, branding consultants.</li>
+                                        <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Other creative and professional minds who would like to join our space and our community.</li>
+                                    </ul>
+                                </div>
+                            </div><!--end col-->
+                            <div class="col-lg-5 col-md-6 mt-4 pt-2">
+                                <img src="images/truspace/20200822_124920.jpg" class="img-fluid rounded shadow-md" alt="">
+                            </div><!--end col-->
+            
+                        </div><!--end row-->
+                    </div><!--end teb pane-->
+                            </div><!--end tab content-->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end container-->
+            </section><!--end section-->
+            <!-- End -->
+            <!-- Start Services & Spaces -->
+        <section class="section bg-light" id="services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title ml-lg-5;">
+                            <h3 class="title mb-4">OUR SERVICES
+                                <span aria-hidden="true" class="css-1x6b7sj">.</span>
+                            </h3>
+                           
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-wifi"></i></span>
+                            <h5 class="mt-2">High Speed Internet</h5>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-users-alt"></i></span>
+                            <h5 class="mt-2">Front Desk/Admin Service</h5>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-process"></i></span>
+                            <h5 class="mt-2">Flexible Plans</h5>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-lightbulb-alt"></i></span>
+                            <h5 class="mt-2">Uninterrupted Power Supply </h5>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-table"></i></span>
+                            <h5 class="mt-2">Modern Designs</h5>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-meeting-board"></i></span>
+                            <h5 class="mt-2">Meeting Rooms</h5>
+                        </div>
+                    </div><!--end col-->
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-parking-circle"></i></span>
+                            <h5 class="mt-2">Free Parking</h5>
+                        </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-glass"></i></span>
+                            <h5 class="mt-2">Kitchenette</h5>
+                        </div>
+                    </div><!--end col-->
+                    
+                   
+                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                        <div class="card feature border-0 bg-transparent p-4 text-center">
+                            <span class="text-primary h2"><i class="uil uil-print"></i></span>
+                            <h5 class="mt-2">Printing/Copying</h5>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        <!-- Shape Start -->
+        <div class="position-relative">
+            <div class="shape overflow-hidden text-white">
+                <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </div>
+    
+         
+            </div>
+        <section class="section" id="" style="background-color: #fff;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                    <div class="section-title ml-lg-5;">
+                        <h3 class="title mb-4">WORK YOUR WAY
+                            <span aria-hidden="true" class="css-1x6b7sj">.</span>
+                        </h3>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+            <div class="col-12">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 px-1 mt-1">
+                    <div class="card work-container work-modern position-relative overflow-hidden rounded-0 border-0">
+                        <div class="card-body p-0">
+                            <img src="images/truspace/20200210_200104.jpg" class="img-fluid" alt="work-image">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="icons text-center">
+                                <a href="images/truspace/20200210_200104.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="search" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-4 col-md-6 col-12 px-1 mt-1" >
+                    <div class="card work-container work-modern position-relative overflow-hidden rounded-0 border-0">
+                        <div class="card-body p-0">
+                            <img src="images/truspace/20200822_123328.jpg" class="img-fluid" alt="work-image">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="icons text-center">
+                                <a href="images/truspace/20200822_123328.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="search" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-4 col-md-6 col-12 px-1 mt-1">
+                    <div class="card work-container work-modern position-relative overflow-hidden rounded-0 border-0">
+                        <div class="card-body p-0">
+                            <img src="images/truspace/20200822_124920.jpg" class="img-fluid" alt="work-image">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="icons text-center">
+                                <a href="images/truspace/20200822_124920.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="search" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 px-1 mt-1">
+                    <div class="card work-container work-modern position-relative overflow-hidden rounded-0 border-0">
+                        <div class="card-body p-0">
+                            <img src="images/truspace/20210316_155416.jpg" class="img-fluid" alt="work-image">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="icons text-center">
+                                <a href="images/truspace/20210316_155416.jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="search" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 px-1 mt-1">
+                    <div class="card work-container work-modern position-relative overflow-hidden rounded-0 border-0">
+                        <div class="card-body p-0">
+                            <img src="images/truspace/meetingroom3-copy.jpeg" class="img-fluid" alt="work-image">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="icons text-center">
+                                <a href="images/truspace/meetingroom3-copy.jpeg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="search" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 px-1 mt-1">
+                    <div class="card work-container work-modern position-relative overflow-hidden rounded-0 border-0">
+                        <div class="card-body p-0">
+                            <img src="images/truspace/20200822_123551 (1).jpg" class="img-fluid" alt="work-image">
+                            <div class="overlay-work bg-dark"></div>
+                            <div class="icons text-center">
+                                <a href="images/truspace/20200822_123551 (1).jpg" class="text-primary work-icon bg-white d-inline-block rounded-pill mfp-image"><i data-feather="search" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div><!--end row-->
+    </div><!--end container-->
+</section><!--end section-->
+
+<!--memebers testimonal-->
+<section class="section bg-light" id="">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+            <div class="section-title ml-lg-5;">
+                <h3 class="title mb-4">TESTIMONALS
+                    <span aria-hidden="true" class="css-1x6b7sj">.</span>
+                </h3>
+            </div>
+        </div><!--end col-->
+            <div class="testimonial-slider">
+                <ul class="slider">
+                  <li>
+                    <div class="testimonial-slider-content">
+                      <q> The professionalism and hospitality.<br>
+                        I like that it is quiet and I can work undisturbed. <br>
+                          I like the office set up, how it looks,<br>
+                          I like that it feels like my own office and I can be confident to grow my business here.
+                        </q>
+                      <p class="source">- Tolani Thomas, CEO Halisi consults.</p>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="testimonial-slider-content">
+                      <q>Here is the second one, this is awesome!</q>
+                      <p class="source">- Ella M, TX</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="testimonial-slider-content">
+                      <q>Next, the third quote - AMAZING!</q>
+                      <p class="source">- Blaine B, TX</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="testimonial-slider-content">
+                      <q>This is the last quote, I can't believe how well this worked!</q>
+                      <p class="source">- Guillermo O, TX</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              
+            
+        </div><!--end col-->
+        
+        </div>
+        </div>
+</section>
+
+
+        <!-- Footer Start -->
+        <footer class="footer bg-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-12 mb-lg-0 mb-md-4 pb-lg-0 pb-md-2">
+                        <a href="#" class="logo-footer text-white"><img src="images/truspace/logo.png" class="l-light" height="56" alt=""></a>
+                        <p class="mt-4">Truspace offer a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity.</p>
+                        <ul class="list-unstyled social-icon social mb-0 mt-4">
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                        </ul><!--end icon-->
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-12">
+                        <div class="row">
+                            <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                                <h5 class="text-light footer-head">LINKS</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Who We Are</a></li>
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Plans</a></li>
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Services</a></li>
+                                    <li><a href="javascript:void(0)" class="text-foot"><i class="mdi mdi-chevron-right mr-1"></i> Contact</a></li>
+                            </div><!--end col-->
+
+                            <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                                <h5 class="text-light footer-head">Contacts</h5>
+                                <ul class="list-unstyled footer-list mt-4">
+                                    <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="#" class="text-foot">6, Prince Bode Oluwo-Mende
+                                        Maryland,Lagos Nigeria.</a></li>
+                                    <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
+                                    <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot">+(234) 903 000 2705</a></li>
+                                    <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">MONDAY-SATURDAY <br>( 8AM- 5PM)</a></li>
+                                </ul>
+                            </div><!--end col-->
+                        </div><!--end row-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <footer class="footer bg-footer footer-bar">
+            <div class="container text-center">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <p class="mb-0">© 2021 Truspace | All Rights Reversed..</p>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+ 
+
+
+       
+        
+        <!-- javascript -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <!-- Magnific popup -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/isotope.js"></script>
+        <script src="js/portfolio.init.js"></script>
+        <script src="js/magnific.init.js"></script>
+        <!-- Icon -->
+        <script src="js/feather.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/owl.init.js"></script>
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+    </body>
+
+
+</html>
