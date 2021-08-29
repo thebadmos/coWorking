@@ -67,7 +67,7 @@ p {
 
 
 .section {
-  padding: 60px 0;
+  padding: 30px 0;
   position: relative;
 }
 
@@ -1580,7 +1580,9 @@ button:not(:disabled) {
   margin-bottom: 15px;
   background: #f4f9ff;
 }
-
+.nav-link{
+  padding: 0%;
+}
 .nav-pills .nav-link {
   color: #495057 !important;
   padding: 5px;
@@ -1970,21 +1972,21 @@ button:not(:disabled) {
   border-color: #adb5bd;
 }
 
-/* .back-to-top {
+.back-to-top {
   z-index: 99;
   position: fixed;
   bottom: 30px;
   right: 30px;
   display: none;
-} */
+} 
 
-/* .back-to-home {
+.back-to-home {
   position: absolute;
   top: 4%;
   right: 2%;
   z-index: 1;
-} */
-/* 
+} 
+
 .back-to-home a {
   width: 40px;
   height: 40px;
@@ -1994,7 +1996,7 @@ button:not(:disabled) {
 
 .back-to-home a .fea {
   stroke-width: 2;
-} */
+} 
 
 .partner-img {
   opacity: 0.6;
@@ -2030,6 +2032,25 @@ button:not(:disabled) {
     top: 70px;
   }
 }
+/*Whatsapp style*/
+.float{
+  position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
 
 /************************
     6.  Menu
@@ -2044,6 +2065,7 @@ button:not(:disabled) {
   border: 0;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+  
 }
 
 #topnav .logo {
@@ -3352,6 +3374,11 @@ button:not(:disabled) {
   padding: 0 0 30px 0;
 }
 
+.section-two .detailed-plan {
+  background-color: #b0f776;
+  padding: 10px 0; 
+  border-radius: 6px;
+ }
 /*detailed plans*/
 #detailed-plans {
   background-color: #f6f4f5;
@@ -3519,21 +3546,6 @@ button:not(:disabled) {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-.float{
-font-size: 30px;
-border-radius:50px;
-text-align:center;
-box-shadow: 2px 2px 3px #999;
-z-index:100;
-background-color:#25d366;
-color:white;
-width:60px;
-height: 60px;
-left: 40px;
-}
-.my-float{
-	margin-top:16px;
-} 
 
 /*testimonial*/
 
