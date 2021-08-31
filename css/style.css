@@ -47,9 +47,10 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
   background: #79c879;
   color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: none;
 }
+
 ::selection {
   background: #465467;
   color: #ffffff;
@@ -194,6 +195,7 @@ p {
   .margin-top-100 {
     margin-top: 100px;
   }
+ 
 }
 
 @media (max-width: 768px) {
@@ -218,6 +220,7 @@ p {
   .feature-posts-placeholder {
     height: 80%;
   }
+ 
 }
 
 /*Testimonial*/
@@ -2258,7 +2261,7 @@ button:not(:disabled) {
 
 #topnav .menu-extras {
   float: right;
-  padding-right: 2em;
+  /* padding-right: 2em; */
 }
 
 #topnav.scroll {
@@ -2662,14 +2665,16 @@ button:not(:disabled) {
 }
 
 @media (max-width: 425px) {
-  #topnav .buy-button .book-seat {
+  /* #topnav .buy-button .book-seat {
     display: none;
-  }
+  } */
   #topnav .buy-menu-btn {
     display: block !important;
     margin: 0 10px;
     padding: 10px 20px;
   }
+  .form-container .#myForm{}
+
 }
 
 /************************
@@ -3505,10 +3510,12 @@ button:not(:disabled) {
 .form-popup {
   display: none;
   position: fixed;
-  bottom: 10em;
-  right: 20em;
+top:5em;
+  /* bottom: 5em; */
+  /* right: 20em; */
   border: 3px solid #f1f1f1;
   z-index: 9;
+  align-items: center;
 }
 .form-popup h3{
   text-align: center;

@@ -26,19 +26,20 @@ function submitForm(e){
   
     //Get values
      var Fname = getInputVal('Fname');
-     var occupation = getInputVal('occupation');
+     var role = getInputVal('role');
      var phone = getInputVal('phone');
      var email = getInputVal('email');
      var company = getInputVal('company');
      var typeSpace = getInputVal('typeSpace');
      var comments = getInputVal('comments');
-     var spaceInterest = getInputVal('spaceInterest');
+     var numPeople = getInputVal('numPeople');
      var website = getInputVal('website');
      var checkDate = getInputVal('checkin-date');
-     var team = getInputVal('team');
+     var sector = getInputVal('sector');
+    
       
      //save message
-     saveMessage(Fname,occupation,phone,email,company,typeSpace,comments,spaceInterest,website,checkDate,team);
+     saveMessage(Fname,role,phone,email,company,typeSpace,comments,numPeople,website,checkDate,sector);
 
      //show alert
       document.querySelector('.alert').style.display = 'block';
@@ -60,20 +61,20 @@ function getInputVal(id){
 }
 
  //save message to firebase
- function saveMessage(Fname,occupation,phone,email,company,typeSpace,comments,spaceInterest,website,checkDate,team){
+ function saveMessage(Fname,role,phone,email,company,typeSpace,comments,numPeople,website,checkDate,sector){
      var newMessageRef = messagesRef.push();
      newMessageRef.set({
          Fname: Fname,
-         occupation: occupation,
+         role: role,
          phone: phone,
          email: email,
          company: company,
          typeSpace: typeSpace,
          comments: comments,
-         spaceInterest: spaceInterest,
+         numPeople: numPeople,
          website: website,
          checkDate: checkDate,
-         team:team
+         sector: sector
 });
  }
 

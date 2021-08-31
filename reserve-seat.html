@@ -9,7 +9,9 @@
         <meta name="keywords" content="Application, Clean, Saas, Dashboard, Bootstrap4" />
         <meta content="Shreethemes" name="author" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/truspace/apple-touch-icon.png">
+       
+        <link rel="shortcut icon" href="images/truspace/icononlygreen.png">
+        
         <!-- Bootstrap css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
@@ -27,13 +29,13 @@
 
     <body>
         <!-- Loader Start -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div id="status">
                 <div class="logo">
                     <img src="images/truspace/logo.png" height="100" class="d-block mx-auto" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Loader End -->
 
         <!-- Navbar STart -->
@@ -46,9 +48,7 @@
                         <img src="images/truspace/logo.png" class="l-light" height="66" alt="">
                     </a>    
                 </div>                 
-                <div class="buy-button">
-                  <a href="reserve-seat.html" class="btn btn-primary book-seat">Reserve A Seat</a>
-                </div><!--end login button-->
+             
                 <!-- End Logo container-->
                 <div class="menu-extras">
                     <div class="menu-item">
@@ -103,7 +103,7 @@
         </section><!--end section-->
         <!-- Hero End -->
 
-            <div class="container mt-100 mt-60">
+            <div class="container mt-100 mt-60" id="reserve">
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title text-center mb-8 pb-2">
@@ -129,7 +129,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
                                             <label class="font-weight-bold" for="name2">Role:</label>
-                                            <input name="name" id="occupation" type="text" class="form-control bg-white" required placeholder="Role :">
+                                            <input name="name" id="role" type="text" class="form-control bg-white" required placeholder="Role :">
                                         </div>
                                     </div><!--end col-->
 
@@ -148,27 +148,33 @@
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Company Name / StartUp Name : </label>
-                                            <input name="text" id="company" type="text" class="form-control bg-white" required>
+                                            <input name="text" id="company" type="text" class="form-control bg-white" required placeholder="Your Company Name :">
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Company Website / Handle : </label>
-                                            <input name="text" id="website" type="text" class="form-control bg-white" required>
+                                            <input name="text" id="website" type="text" class="form-control bg-white" required placeholder="Your Company Website :">
                                         </div>
                                     </div><!--end col-->
 
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Business Sector / Industry : </label>
-                                            <input name="text" id="company" type="text" class="form-control bg-white" required>
+                                            <input name="text" id="sector" type="text" class="form-control bg-white" required placeholder="Your Business Sector :">
                                         </div>
                                     </div><!--end col-->
                                     
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="font-weight-bold">Number Of People:</label>
-                                            <input name="numPeople" id="numPeople" type="number" class="form-control bg-white" required>
+                                            <label class="font-weight-bold">Number Of Team:</label>
+                                            <select class="form-control custom-select bg-white" id="numPeople" required>
+                                                <option selected value="select">-Select-</option>
+                                                <option value="1person" > 1 person</option>
+                                                <option value="2-4people" > 2-4 people</option>
+                                                <option value="5-9people" > 5-9 people</option>
+                                                <option value="10plus" > 10+ people</option>
+                                            </select>
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-md-6">
@@ -180,8 +186,9 @@
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label class="font-weight-bold">What plan are you interested in :</label>
-                                            <select class="form-control custom-select bg-white" id="typeSpace">
-                                                <option selected value="hotdesk">Hot Desk</option>
+                                            <select class="form-control custom-select bg-white" id="typeSpace" required>
+                                                <option selected value="select">-Select-</option>
+                                                <option value="hotdesk">Hot Desk</option>
                                                 <option value="privateoffice" >Private Office</option>
                                                 <option value="virtualoffice" >Virtual Office</option>
                                                 <option value="dedicateddesk" >Dedicated Desk</option>
@@ -217,36 +224,39 @@
         <footer class="footer bg-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-12 mb-lg-0 mb-md-4 pb-lg-0 pb-md-2">
+                    <div class="col-lg-5 col-12 mb-lg-0">
                         <a href="#" class="logo-footer text-white"><img src="images/truspace/logo.png" class="l-light" height="56" alt=""></a>
-                        <p class="mt-4">Truspace offers a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity.</p>
-                        <ul class="list-unstyled social-icon social mb-0 mt-4">
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                        </ul><!--end icon-->
+                        <p class="mt-4" style="margin-left: 1em;">
+                            Beyond just a physical space to work, our aim is to provide an enabling environment that fosters positive connections and empowers our members to succeed.<br>
+                             Get in touch and learn how you can become a member <br>of our community. </p>
+                       
                     </div><!--end col-->
-
+        
                     <div class="col-lg-7 col-12">
                         <div class="row">
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                                <h5 class="text-light footer-head">LINKS</h5>
+                                <h5 class="text-light footer-head">SITE MAP</h5>
                                 <ul class="list-unstyled footer-list mt-4">
-                                    <li class="nav-item">
-                                        <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Home</a></li>
+                                    <ul class="list-unstyled footer-list mt-4">
                                         <li class="nav-item">
-                                            <a href="page-pricing.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Plans</a></li>
-                                           
+                                            <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Home</a></li>
+                                            <li class="nav-item">
+                                                <a href="page-pricing.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Plans</a></li>
+                                                <li class="nav-item">
+                                                    <a href="#reserve" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Reserve Seat</a></li>
+                                                    <ul class="list-unstyled social-icon social mb-0 mt-4"style="margin-left: 1em;">
+                                                        <li class="list-inline-item"><a href="https://web.facebook.com/Truspaceng/?_rdc=1&_rdr" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                                        <li class="list-inline-item"><a href="https://www.instagram.com/truspace_ng/?utm_medium=copy_link"target="_blank"  class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                                        <li class="list-inline-item"><a href="https://www.google.com/maps/dir/6.5777386,3.369134/Truspace+Coworking,+6+Prince+Bode+Oluwo+St,+Mende+105102,+Lagos/@6.5746982,3.366178,16z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x103b93b71a19126b:0x89be414f23ed98d8!2m2!1d3.3723503!2d6.5706761" target="_blank" class="rounded"><i data-feather="map-pin" class="fea icon-sm fea-social"></i></a></li>
+                                                    </ul><!--end icon-->     
                             </div><!--end col-->
-
+        
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                                <h5 class="text-light footer-head">Contacts</h5>
+                                <h5 class="text-light footer-head">CONTACT US</h5>
                                 <ul class="list-unstyled footer-list mt-4">
                                     <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="#" class="text-foot">6, Prince Bode Oluwo-Mende
                                         Maryland,Lagos Nigeria.</a></li>
                                     <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
-                                    <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot">+(234) 903 000 2705</a></li>
                                     <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">MONDAY-FRIDAY <br>( 8AM- 5PM)</a></li>
                                 </ul>
                             </div><!--end col-->
@@ -255,23 +265,21 @@
                 </div><!--end row-->
             </div><!--end container-->
         </footer><!--end footer-->
+        
         <footer class="footer bg-footer footer-bar">
             <div class="container text-center">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <p class="mb-0">© 2021 Truspace | All Rights Reversed..</p>
+                        <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace.All Rights Reserved</span></p>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
         </footer><!--end footer-->
-
-        <!-- Back to top -->
-        <a href="" target="_blank" class="btn btn-icon btn-primary back-to-top">
-            <i data-feather="arrow-up"></i>
-        </a>      
-   
-        <!-- Back to top -->
-
+        
+        
+         <a href="#" class="btn btn-icon btn-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+              
+        
         
          
         <!-- javascript -->

@@ -8,7 +8,8 @@
         <meta name="keywords" content="Application, Clean, Saas, Dashboard, Bootstrap4" />
         <meta content="Shreethemes" name="author" />
         <!-- favicon -->
-        <link rel="shortcut icon" href="images/truspace/apple-touch-icon.png">
+        <link rel="shortcut icon" href="images/truspace/icononlygreen.png">
+        
         <!-- Bootstrap css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
@@ -27,17 +28,16 @@
         <!-- Main css File -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
-
-    <body>
+     <body>
      
         <!-- Loader Start -->
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div id="status">
                 <div class="logo">
                     <img src="images/truspace/logo.png" height="100" class="d-block mx-auto" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Loader End -->
 
         <!-- Navbar STart -->
@@ -55,7 +55,7 @@
                   <!--book a tour form-->
                   <div class="alert">Your Information has been sent</div>
                   <div class="form-popup" id="myForm">
-                    <form action="" class="form-container">
+                    <form action="" class="form-container" id="tourForm">
                         
                       <h3>BOOK A TOUR</h3>
                         <div class="row">
@@ -69,14 +69,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group position-relative">
                                         <label class="font-weight-bold" for="name2">Company Name:</label>
-                                        <input name="name" id="occupation" type="text" class="form-control bg-white" required placeholder="Enter your company name">
+                                        <input name="name" id="company" type="text" class="form-control bg-white" required placeholder="Enter your company name">
                                     </div>
                                 </div><!--end col-->
 
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="font-weight-bold" for="number">Email Address : </label>
-                                        <input name="name" id="occupation" type="email" class="form-control bg-white" required placeholder="Enter your email address">
+                                        <input name="name" id="email" type="email" class="form-control bg-white" required placeholder="Enter your email address">
                                     </div> 
                                 </div><!--end col--> 
                                 <div class="col-md-6">
@@ -101,11 +101,11 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="font-weight-bold" for="number">Pick a date:</label>
-                                        <input name="date" type="date" class="form-control bg-white" id="phone" required placeholder="Pick a date for the tour">
+                                        <input name="date" type="date" class="form-control bg-white" id="date" required placeholder="Pick a date for the tour">
                                     </div> 
                                 </div><!--end col--> 
                       </div>
-                      <button type="submit" class="btn">Submit</button>
+                      <button type="submit" id="submit" name="send"  class="btn">Submit</button>
                       <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
                     </form>
                 
@@ -131,26 +131,26 @@
                 <div id="navigation">
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu nav-light" id="navbar-nav ml-auto">
-                        <li class="has-submenu">
+                        <!-- <li class="has-submenu">
                             <a href="index.html">HOME</a>
-                        </li>
+                        </li> -->
                   <li class="nav-item">
                             <a  class="nav-link scrollTo" href="#who-we-are">WHO WE ARE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a  class="nav-link scrollTo" href="#services">SERVICES</a>
                         </li>
                         <li class="has-submenu">
                             <a href="page-pricing.html">PLANS</a>
                            </li>
+                        <li class="nav-item">
+                            <a  class="nav-link scrollTo" href="#testimonial">TESTIMONIALS</a>
+                        </li>
+                     
                         <li class="nav-item">
                             <a  class="nav-link scrollTo" href="tel:+234903002705">
                                 <i data-feather="phone" class="fea icon-sm text-success mr-2"></i>+(234) 903 000 2705
                              </a>
                         </li>
                     </ul><!--end navigation menu-->
-                 
-                    
+                   
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
@@ -215,7 +215,7 @@
             </div>
         </div>
         <!--Shape End-->
-<section class="section bg-light" id="who-we-are"> 
+      <section class="section bg-light" id="who-we-are"> 
                 <div class="container">
                    <div class="row align-items-center">
                            <div class="col-lg-7 col-md-6">
@@ -260,16 +260,10 @@
                                 <img src="images/truspace/20210412_131705.jpg" class="img-fluid rounded shadow-md" alt=""style="height: 350px;">
                             </div><!--end col-->
                            
-            
-                        </div><!--end row-->
-                    </div><!--end teb pane-->
-                            </div><!--end tab content-->
-                        </div><!--end col-->
-                    </div><!--end row-->
-                </div><!--end container-->
-            </section><!--end section-->
-            <!-- End -->
-
+                   </div>
+                </div>
+      </section>
+              
                      <div id="detailed-plans">
                             <div class="container">
                 
@@ -333,7 +327,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12">
                         <div class="section-title ml-lg-5;">
-                            <h3 class="title mb-4">OUR SERVICES
+                            <h3 class="title mb-4">All Inclusive Amenities
                                 <span aria-hidden="true" class="css-1x6b7sj">.</span>
                             </h3>
                            
@@ -391,7 +385,7 @@
                     
                     <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                         <div class="card feature border-0 bg-transparent p-4 text-center">
-                            <span class="text-primary h2"><i class="uil uil-glass"></i></span>
+                            <span class="text-primary h2"><i class="uil uil-adjust-circle"></i></span>
                             <h5 class="mt-2">Neatness</h5>
                         </div>
                     </div><!--end col-->
@@ -411,7 +405,7 @@
                     </div><!--end col-->
                     <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
                         <div class="card feature border-0 bg-transparent p-4 text-center">
-                            <span class="text-primary h2"><i class="uil uil-print"></i></span>
+                            <span class="text-primary h2"><i class="uil uil-sanitizer"></i></span>
                             <h5 class="mt-2">Covid Protocol</h5>
                         </div>
                     </div><!--end col-->
@@ -424,6 +418,7 @@
                 </div><!--end row-->
             </div><!--end container-->
         <!-- Shape Start -->
+    </section>
         <div class="position-relative">
             <div class="shape overflow-hidden text-white">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -431,15 +426,13 @@
                 </svg>
             </div>
         </div>
-    
-         
-            </div>
-        <section class="section" id="" style="background-color: #fff;">
+      
+        <section class="section" id="gallery" style="background-color: #fff;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12">
                     <div class="section-title ml-lg-5;">
-                        <h3 class="title mb-4">WORK YOUR WAY
+                        <h3 class="title mb-4">Gallery
                             <span aria-hidden="true" class="css-1x6b7sj">.</span>
                         </h3>
                     </div>
@@ -515,17 +508,16 @@
                 </div>
                 </div>
             </div>
-        </div><!--end row-->
-    </div><!--end container-->
-</section><!--end section-->
+            </div>
+        </section>
 
 <!--memebers testimonal-->
-<section class="section bg-light" id="" style="height: 400px;">
+<section class="section bg-light" id="testimonial" style="height: 380px;">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
             <div class="section-title ml-lg-5;">
-                <h3 class="title mb-4">TESTIMONALS
+                <h3 class="title mb-4">Client's Testimonial
                     <span aria-hidden="true" class="css-1x6b7sj">.</span>
                 </h3>
             </div>
@@ -555,8 +547,7 @@
                   <li>
                     <div class="testimonial-slider-content">
                       <q> The Truspace Coworking environment really helped accelerate my business growth,<br>
-                          from the conducive environment to the really attentive staff, <br>
-                          and the free coaching session I get during coffee breaks. <br>
+                          from the conducive environment to the really attentive staff. <br>
                           I recommend this space to business owners looking for a conducive and collaborative 
                           place to work.
                     </q>
@@ -604,6 +595,7 @@
               </div>
     </div>
 </section>   
+
 <a href="https://wa.me/+234903002705" target="_blank" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>      
@@ -612,36 +604,39 @@
         <div class="row">
             <div class="col-lg-5 col-12 mb-lg-0">
                 <a href="#" class="logo-footer text-white"><img src="images/truspace/logo.png" class="l-light" height="56" alt=""></a>
-                <p class="mt-4" style="margin-left: 1em;">Truspace offers a wealth of advantages for self starters, including networking opportunities, daily structure, and increased productivity.</p>
-                <ul class="list-unstyled social-icon social mb-0 mt-4"style="margin-left: 1em;">
-                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                    <li class="list-inline-item"><a href="javascript:void(0)" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
-                </ul><!--end icon-->
+                <p class="mt-4" style="margin-left: 1em;">
+                    Beyond just a physical space to work, our aim is to provide an enabling environment that fosters positive connections and empowers our members to succeed.<br>
+                     Get in touch and learn how you can become a member <br>of our community. </p>
+             
             </div><!--end col-->
 
             <div class="col-lg-7 col-12">
                 <div class="row">
                     <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <h5 class="text-light footer-head">LINKS</h5>
+                        <h5 class="text-light footer-head">SITE MAP</h5>
                         <ul class="list-unstyled footer-list mt-4">
                             <ul class="list-unstyled footer-list mt-4">
                                 <li class="nav-item">
-                                    <a href="who-we-are" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Who we Are</a></li>
+                                    <a href="#who-we-are" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Who We Are</a></li>
                                     <li class="nav-item">
-                                        <a href="#services" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Services</a></li>
+                                        <a href="page-pricing.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Plans</a></li>
                                         <li class="nav-item">
-                                            <a href="page-pricing.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Plans</a></li>
+                                            <a href="#testimonials" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Testimonials</a></li>
+                                    <li class="nav-item">
+                                        <a href="#gallery" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Gallery</a></li>
+                                        <ul class="list-unstyled social-icon social mb-0 mt-4"style="margin-left: 1em;">
+                                            <li class="list-inline-item"><a href="https://web.facebook.com/Truspaceng/?_rdc=1&_rdr" target="_blank" class="rounded"><i data-feather="facebook" class="fea icon-sm fea-social"></i></a></li>
+                                            <li class="list-inline-item"><a href="https://www.instagram.com/truspace_ng/?utm_medium=copy_link"target="_blank"  class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
+                                            <li class="list-inline-item"><a href="https://www.google.com/maps/dir/6.5777386,3.369134/Truspace+Coworking,+6+Prince+Bode+Oluwo+St,+Mende+105102,+Lagos/@6.5746982,3.366178,16z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x103b93b71a19126b:0x89be414f23ed98d8!2m2!1d3.3723503!2d6.5706761" target="_blank" class="rounded"><i data-feather="map-pin" class="fea icon-sm fea-social"></i></a></li>
+                                        </ul><!--end icon-->    
                     </div><!--end col-->
 
                     <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <h5 class="text-light footer-head">Contacts</h5>
+                        <h5 class="text-light footer-head">CONTACT US</h5>
                         <ul class="list-unstyled footer-list mt-4">
                             <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="#" class="text-foot">6, Prince Bode Oluwo-Mende
                                 Maryland,Lagos Nigeria.</a></li>
                             <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
-                            <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot">+(234) 903 000 2705</a></li>
                             <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">MONDAY-FRIDAY <br>( 8AM- 5PM)</a></li>
                         </ul>
                     </div><!--end col-->
@@ -650,11 +645,12 @@
         </div><!--end row-->
     </div><!--end container-->
 </footer><!--end footer-->
+
 <footer class="footer bg-footer footer-bar">
     <div class="container text-center">
         <div class="row justify-content-center">
             <div class="col-12">
-                <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace</span></p>
+                <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace.All Rights Reserved</span></p>
             </div><!--end col-->
         </div><!--end row-->
     </div><!--end container-->
@@ -682,6 +678,9 @@
         <script src="js/owl.init.js"></script>
         <!-- Main Js -->
         <script src="js/app.js"></script>
+         <!--Booking Js-->
+         <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+         <script src="js/bookTour.js"></script>
     </body>
 
 
