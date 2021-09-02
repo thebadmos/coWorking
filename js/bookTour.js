@@ -22,14 +22,16 @@ function submitForm(e){
   
     //Get values
      var Fname = getInputVal('Fname');
+     var Lname = getInputVal('Lname');
      var phone = getInputVal('phone');
      var email = getInputVal('email');
      var company = getInputVal('company');
      var spaceInterest = getInputVal('spaceInterest');
+     var typeSpace = getInputVal('typeSpace');
      var date = getInputVal('date');
       
      //save message
-     saveMessage(Fname,phone,email,company,spaceInterest,date);
+     saveMessage(Fname,Lname,phone,email,company,spaceInterest,typeSpace,date);
 
      //show alert
       document.querySelector('.alert').style.display = 'block';
@@ -48,14 +50,16 @@ function submitForm(e){
     }
     
      //save message to firebase
-     function saveMessage(Fname,phone,email,company,spaceInterest,date){
+     function saveMessage(Fname,Lname,phone,email,company,spaceInterest,typeSpace,date){
          var newMessageRef = messagesRef.push();
          newMessageRef.set({
              Fname: Fname,
+             Lname: Lname,
              phone: phone,
              email: email,
              company: company,
              spaceInterest: spaceInterest,
+             typeSpace:typeSpace,
              date: date
     });
      }
