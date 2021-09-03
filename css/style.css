@@ -1702,7 +1702,14 @@ button:not(:disabled) {
           transform: translateY(-50%);
 }
 /*gallery*/
-
+#exp .button-wrap{
+  padding: 7px 10px;
+  text-align:center;
+  background: #343a40;
+  border-radius: 12px;
+  color: #62bd19;
+  width:10em;
+}
 
 
 .faq-content .card a.faq[data-toggle=collapse] {
