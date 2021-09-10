@@ -10,8 +10,7 @@
         <meta content="Shreethemes" name="author" />
         <!-- favicon -->
        
-        <link rel="shortcut icon" href="images/truspace/icononlygreen.png">
-        
+        <link rel="icon" sizes="180x180" href="images/favicon/logo.ico">
         <!-- Bootstrap css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- Icons -->
@@ -19,6 +18,8 @@
            
         <link rel="stylesheet" href="css/unicons.iconscout.com/release/v2.1.9/css/unicons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
         <!-- Icons -->
         <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" /> 
         <!-- Date picker -->
@@ -45,8 +46,95 @@
                    <div>
                     <a class="logo">
                         <img src="images/truspace/logo.png" class="l-dark" height="46" alt="">
-                        <img src="images/truspace/logo.png" class="l-light" height="66" alt="">
-                    </a>    
+                        <img src="images/truspace/logoImage.png" class="l-light" height="66" alt="">
+                    </a>  
+                    <div class="buy-button">
+                        <button class="btn btn-primary book-seat" class="open-button" onclick="openForm()">Book A Tour</button>
+                        </div>
+                        <!--book a tour form-->
+                        <div class="alert">Your Information has been sent</div>
+                        <div class="form-popup" id="myForm">
+                          <form action="" class="form-container" id="tourForm">
+                              
+                            <h3>BOOK A TOUR</h3>
+                              <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group position-relative">
+                                              <label class="font-weight-bold" for="name">First Name :</label>
+                                              <input name="name" id="Fname" type="text" class="form-control bg-white" required placeholder="Enter your first name">
+                                          </div>
+                                      </div><!--end col-->
+                                      <div class="col-md-6">
+                                          <div class="form-group position-relative">
+                                              <label class="font-weight-bold" for="name">Last Name :</label>
+                                              <input name="name" id="Lname" type="text" class="form-control bg-white" required placeholder="Enter your last name">
+                                          </div>
+                                      </div><!--end col-->
+      
+      
+                                      <div class="col-md-6">
+                                          <div class="form-group position-relative">
+                                              <label class="font-weight-bold" for="name2">Company Name:</label>
+                                              <input name="name" id="company" type="text" class="form-control bg-white" required placeholder="Enter your company name">
+                                          </div>
+                                      </div><!--end col-->
+      
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label class="font-weight-bold" for="number">Email Address : </label>
+                                              <input name="name" id="email" type="email" class="form-control bg-white" required placeholder="Enter your email address">
+                                          </div> 
+                                      </div><!--end col--> 
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label class="font-weight-bold">I need a space for :</label>
+                                              <select class="form-control custom-select bg-white" id="spaceInterest">
+                                                  <option selected value="Findworkspace">-Select-</option>
+                                                  <option value="1person" > 1 person</option>
+                                                  <option value="2-4people" > 2-4 people</option>
+                                                  <option value="5-9people" > 5-9 people</option>
+                                                  <option value="10plus" > 10+ people</option>
+                                              </select>
+                                          </div>
+                                      </div><!--end col-->
+      
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label class="font-weight-bold">What plan are you interested in :</label>
+                                              <select class="form-control custom-select bg-white" id="typeSpace" required>
+                                                  <option selected value="select">-Select-</option>
+                                                  <option value="daypass">A Day-Pass</option>
+                                                  <option value="hotdesk">Hot Desk</option>
+                                                  <option value="privateoffice" >Private Office</option>
+                                                  <option value="virtualoffice" >Virtual Office</option>
+                                                  <option value="dedicateddesk" >Dedicated Desk</option>
+                                                  <option value="meetingroom" >Meeting Room</option>
+                                                  <option value="trainingroom">Training Workspaces</option>
+                                              </select>
+                                          </div>
+                                      </div><!--end col-->
+                                      
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label class="font-weight-bold" for="number">Phone Number : </label>
+                                              <input name="number" type="number" class="form-control bg-white" id="phone" required placeholder="Enter your phone number">
+                                          </div> 
+                                      </div><!--end col--> 
+                                      <div class="col-md-6">
+                                          <div class="form-group">
+                                              <label class="font-weight-bold" for="number">Pick a date:</label>
+                                              <input name="date" type="date" class="form-control bg-white" id="date" required placeholder="Pick a date for the tour">
+                                          </div> 
+                                      </div><!--end col--> 
+                            </div>
+                            <button type="submit" id="submit" name="send"  class="btn">Submit</button>
+                            <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
+                          </form>
+                      
+                        
+                           
+                        </div>
+                          
                 </div>                 
              
                 <!-- End Logo container-->
@@ -87,27 +175,17 @@
     
 
         <!-- Hero Start -->
-        <section class="bg-half-170 d-table w-100" style="background: url('images/truspace/Pricepage/20210313_130718e.jpg') center center;">
-            <div class="bg-overlay" style="background-image: url('images/bg.png')"></div>
-            <div class="container">
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="title-heading">
-                            <h3 class="text-white mb-0"><span class="font-weight-bold">Fill in your details</span>
-
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </div><!--end container--> 
+        <section class="bg-half-170 d-table w-100" style="background: url('images/truspace/ImagesBanner/20200227_171626ee.jpg') center center;">
+            <div class="bg-overlay"></div>
+           
         </section><!--end section-->
         <!-- Hero End -->
 
-            <div class="container mt-100 mt-50" id="reserve">
-              
-                
+            <div class="container mt-50 mt-50" id="reserve">
                 <div class="row justify-content-center mb-4">
                     <div class="col-lg-8 col-12 mt-4 pt-2">
+                        <h3><span class="font-weight-bold">Kindly fill in your details below</span>
+                        </h3>
                         <div class="p-4 rounded bg-light shadow">
                             <div class="alert">Your Information has been sent</div>
                             <form id="bookingForm">
@@ -213,7 +291,7 @@
                 </div><!--end row-->
             </div><!--end container-->
 
-            <a href="https://wa.me/+234903002705" target="_blank" class="float" target="_blank">
+            <a href="https://wa.me/+2349030002705" target="_blank" class="float" target="_blank">
                 <i class="fa fa-whatsapp my-float"></i>
                 </a>      
 
@@ -238,15 +316,88 @@
                         <div class="row">
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
                                 <h5 class="text-light footer-head">SITE MAP</h5>
-                                <ul class="list-unstyled footer-list mt-4">
                                     <ul class="list-unstyled footer-list mt-4">
                                         <li class="nav-item">
-                                            <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Home</a></li>
+                                            <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Who We Are</a></li>
                                             <li class="nav-item">
                                                 <a href="page-pricing.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Plans</a></li>
                                                 <li class="nav-item">
-                                                    <a href="#reserve" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Reserve Seat</a></li>
-                                                      
+                                                    <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Testimonials</a></li>
+                                            <li class="nav-item">
+                                                <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Gallery</a></li>
+                                                <li class="nav-item">
+                                                    <a href="#reserve" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Reserve A Seat</a></li>
+                                                <div class="buy-button">
+                                                    <button class="btn btn-primary book-seat" class="open-button" onclick="covidForm()">Covid-19 Response</button>
+                                                    </div>
+                                                       <!--book a tour form-->
+              <div class="form-popup2" id="formCovid">
+                <form action="" class="form-container2">
+                    
+                    <h5>
+                        Maintaining A Safe Workspace for Our Community</h5>
+                        <p>As the COVID-19 pandemic continues to impact daily life, we remain committed to providing our community with a safe and hygienic work environment for all. </p>
+                      <div class="row">
+                              <div class="col-md-6">
+                                  <div class="form-group position-relative">
+                                    <div class="card feature border-0 bg-transparent text-center">
+                                        <span class="text-primary h2"><i class="fa fa-thermometer-full"></i></span>
+                                      <label class="font-weight-bold">Temperature checks at the entrance to the building.</label>
+                                     
+                                    </div>
+                                  </div>
+                              </div><!--end col-->
+                              <div class="col-md-6">
+                                  <div class="form-group position-relative">
+                                    <div class="card feature border-0 bg-transparent text-center">
+                                        <span class="text-primary h2"> <i class='bx bxs-face-mask'></i></span>
+                                      <label class="font-weight-bold" for="name">Usage of face masks while in the building.</label>
+                                     
+                                      </div>
+                                  </div>
+                              </div><!--end col-->
+                              <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <div class="card feature border-0 bg-transparent text-center">
+                                    <span class="iconify h2"  data-icon="mdi:hand-wash-outline" style="margin-left: 3.8em;"></span>
+                                    <label class="font-weight-bold" for="name">Promoting frequent handwashing, use of hand sanitisers provided at key areas and good personal respiratory hygiene.</label>
+                                   
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <div class="card feature border-0 bg-transparent text-center">
+                                    <span class="iconify h2" data-icon="fa-solid:people-arrows" style="margin-left: 3.6em;"></span>
+                                    <label class="font-weight-bold" for="name">Physical distancing within the workspaces and offices.</label>
+                                   
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <div class="card feature border-0 bg-transparent text-center">
+                                      <span class="text-primary h2"><i class="uil uil-sanitizer"></i></span>
+                                    <label class="font-weight-bold" for="name">Frequent sanitisation of high touchpoint areas, surfaces and workspaces to meet global health and safety regulations.</label>
+                                   
+                                    </div>
+                                </div>
+                            </div><!--end col-->
+                            <div class="col-md-6">
+                                <div class="form-group position-relative">
+                                  <div class="card feature border-0 bg-transparent text-center">
+                                      <span class="text-primary h2"><i class="fa fa-clipboard" ></i></span>
+                                    <label class="font-weight-bold" for="name">Posters placed at strategic locations to support and remind our visitors and members on how to conduct business safely.</label>
+                                   
+                                    </div>
+                                </div>
+                            </div><!--end col-->      
+                    </div>
+                  
+                    <button type="button" class="cancel" onclick="covidClose()" id="close2">X</button> 
+                  </form>
+              </div>  
+                                                
                             </div><!--end col-->
         
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
@@ -269,7 +420,7 @@
             <div class="container text-center">
                 <div class="row justify-content-center">
                     <div class="col-12">
-                        <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace.All Rights Reserved</span></p>
+                        <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace. All Rights Reserved.</span></p>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
@@ -292,6 +443,7 @@
         <script src="js/portfolio.init.js"></script>
         <!-- Icon -->
         <script src="js/feather.min.js"></script>
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
         <!-- Datepicker -->
         <script src="js/flatpickr.min.js"></script>
         <script src="js/flatpickr.init.js"></script>

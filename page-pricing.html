@@ -10,7 +10,7 @@
         <meta content="Shreethemes" name="author" />
         <!-- favicon -->
        
-        <link rel="shortcut icon" href="images/truspace/icononlygreen.png">
+        <link rel="icon" sizes="180x180" href="images/favicon/logo.ico">
         
         <!-- Bootstrap css -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -18,6 +18,8 @@
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
         <!-- Main css File -->
         <link href="css/style.css" rel="stylesheet" type="text/css" />
     </head>
@@ -30,12 +32,12 @@
                    <div>
                     <a class="logo">
                         <img src="images/truspace/logo.png" class="l-dark" height="46" alt="">
-                        <img src="images/truspace/logo.png" class="l-light" height="66" alt="">
+                        <img src="images/truspace/logoImage.png" class="l-light" height="66" alt="">
                     </a>    
                 </div>            
              
-             <div class="buy-button">
-                  <a href="reserve-seat.html" class="btn btn-primary book-seat">Get Plans</a>
+             <div class="buy-button" id="price">
+                  <a href="reserve-seat.html" class="btn btn-primary book-seat">Reserve A Seat</a>
                 </div>
                 <!-- End Logo container-->
                 <div class="menu-extras">
@@ -60,7 +62,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a  class="nav-link scrollTo" href="#detailed-plans">WORKSPACE</a>
+                            <a  class="nav-link scrollTo" href="#detailed-plans">WORKSPACES</a>
                         </li>
                         <li class="nav-item">
                             <a  class="nav-link scrollTo" href="#faq">FAQs</a>
@@ -78,44 +80,27 @@
 
 
         <!-- Hero Start -->
-        <section class="bg-half d-table w-100" style="background: url('images/truspace/Pricepage/copy.jpg') center center;" id="workspace">
-            <div class="bg-overlay" style="background-image: url('images/bg.png')"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="title-heading">
-                            <h3 class="text-white">Work Your Way
-                                
-                            <span aria-hidden="true" class="css-1x6b7sj">.</span>
-                            </h3>
-                            
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container--> 
+        <section class="bg-half d-table w-100" style="background: url('images/truspace/ImagesBanner/20210906_154322b.jpg') center center;" id="workspace">
+            <div class="bg-overlay"></div>
         </section><!--end section-->
-        <!-- Hero End -->
-          <section class="section" style="height: 50px; ">
-            <div class="container" >
-                <div class="row align-items-end mb-4 pb-4 ml-2" >
-                    <div class="section-title ml-lg-5;">
-                        <h5 class="text-muted"><span class="font-weight-bold">
-                            Whether its space for a day or a month, one person or a team, we've got all your office space needs.
-                            </span></h5>
-                    </div>
-                    
-                </div>
-                </div>
-                </div>
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-title ml-lg-5;">
+                    <h3 class="text-dark" style="letter-spacing: 2px;">Work Your Way<span aria-hidden="true" class="css-1x6b7sj">.</span> 
+                    </h3>
+                    <h6 class="text-muted"><span class="font-weight-bold">
+                        Whether its space for a day or a month, one person or a team, we've got all your office space needs.
+                        </span></h6> </div>
         </section>
+     
         <div id="detailed-plans">
             <div class="container">
 
-             <div class="detailed-plans">
+             <div class="detailed-plans mt-5">
                         <div class="row">
                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 px-0">
                     <div class="detailed-plan">
-                 <div class="plan-header" style="background-image: url('images/truspace/Pricepage/daypass.jpg') "> 
+                 <div class="plan-header" style="background-image: url('images/truspace/ImagesPlan/Day\ Pass.jpg') "> 
                                         <div class="plan-header-text">
                                             <h5>DAY PASS</h5>
                                         </div>
@@ -131,7 +116,7 @@
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Complimentary coffee/water.
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Open workspace - <span class="h6 mb-0">N3,000/day.</span>
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Central hub workspace - <span class="h6 mb-0">N3,000/day.</span>
                                             </div>
                                             <div class="service">
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Shared private office - <span class="h6 mb-0">N5,000/day.</span></div>
@@ -144,7 +129,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 px-0">
                                 <div class="detailed-plan">
-                                    <div class="plan-header" style="background-image: url('images/truspace/Pricepage/hotflexi.jpg')">
+                                    <div class="plan-header" style="background-image: url('images/truspace/ImagesPlan/Hot\ Desk\ Flexi.jpg')">
                                         <div class="plan-header-text">
                                             <h5>HOT DESK FLEXI</h5>
                                         </div>
@@ -153,7 +138,7 @@
                                         <div class="services">
                                             <div class="service">
                                                 <span class="price h2 font-weight-bold mb-0 ml-1">
-                                                    Access to a workstation in the central hub  &nbsp;3days a week per month. 
+                                                    Access to a workstation in the central hub <br>  &nbsp;3 days a week per month. 
                                                 </span>
                                             </div>
                                             <div class="service">
@@ -180,16 +165,16 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 px-0">
                                 <div class="detailed-plan">
-                                    <div class="plan-header" style="background-image: url('images/truspace/Pricepage/hotfulltime.jpg')">
+                                    <div class="plan-header" style="background-image: url('images/truspace/ImagesPlan/Hot\ Desk\ Full-Time.jpg')">
                                         <div class="plan-header-text">
-                                            <h5>hot desk fulltime</h5>
+                                            <h5>hot desk full-time</h5>
                                         </div>
                                     </div>
                                     <div class="details">
                                         <div class="services">
                                             <div class="service">
                                                 <span class="price h2 font-weight-bold mb-0 ml-1">
-                                                    Access to a workstation in the central hub &nbsp;5days a week per month. 
+                                                    Access to a workstation in the central hub <br> &nbsp;5 days a week per month. 
                                                 </span>
                                             </div>
                                             <div class="service">
@@ -217,7 +202,7 @@
                             
                             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 px-0">
                                 <div class="detailed-plan">
-                                    <div class="plan-header" style="background-image: url('images/truspace/Pricepage/RO2.jpg')">
+                                    <div class="plan-header" style="background-image: url('images/truspace/ImagesPlan/Dedicated\ Desk\ Flexi.jpg')">
                                         <div class="plan-header-text">
                                             <h5>dedicated desk flexi</h5>
                                         </div>
@@ -256,9 +241,9 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 px-0">
                                 <div class="detailed-plan">
-                                    <div class="plan-header" style="background-image: url('images/truspace/Pricepage/RO4.jpg')">
+                                    <div class="plan-header" style="background-image: url('images/truspace/ImagesPlan/Dedicated\ Desk\ Full-Time.jpg')">
                                         <div class="plan-header-text">
-                                            <h5>dedicated desk Fulltime</h5>
+                                            <h5>dedicated desk Full-time</h5>
                                         </div>
                                     </div>
                                     <div class="details">
@@ -278,10 +263,10 @@
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Receptionist service.
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Business address.
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Business address + Mail handling.
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Storage space + Mail handling.
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Storage space.
                                             </div>
                                             <div class="service">
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i><span class="h6 mb-0">50,000/month.</span>
@@ -295,7 +280,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 px-0">
                                 <div class="detailed-plan">
-                                    <div class="plan-header" style="background-image: url('images/truspace/Pricepage/20200214_183501.jpg')">
+                                    <div class="plan-header" style="background-image: url('images/truspace/ImagesPlan/Private\ Office.jpg')">
                                         <div class="plan-header-text">
                                             <h5>Private offices</h5>
                                         </div>
@@ -304,7 +289,7 @@
                                         <div class="services">
                                             <div class="service">
                                                 <span class="price h2 font-weight-bold mb-0 ml-1">
-                                                    Access to an en-suite private office; we have &nbsp;3-man, 5-man or 7-man expandable and &nbsp;customisable offices. 
+                                                    Access to an en-suite private office; we have &nbsp;3-man, 5-man or 7-man customisable &nbsp;offices. 
                                                 </span>
                                             </div>
                                             <div class="service">
@@ -320,10 +305,10 @@
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Business address + Mail handling.
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>In office hosting of guests.                                                .
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>In office hosting of guests.
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i><span class="h6 mb-0"><sup>From</sup> N150,000/month.</span>
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i><span class="h6 mb-0">From N150,000/month.</span>
                                             </div>
                                         </div>
                                         <div class="button-wrap">
@@ -348,24 +333,24 @@
                                                 </span>
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Notable business address.
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Professional business address.
                                             </div>
                                             <div class="service">
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Mail handling services.
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Receptionist service (Basic).
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Receptionist service (Plus).
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Meeting room access (Pro).
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Meeting room access (Plus).
                                             </div>
                                             <div class="service">
                                                 <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Basic
-                                                &nbsp; <span class="h6 mb-0"> - N84,000/year.</span>
+                                                &nbsp; <span class="h6 mb-0"> - N42,000/6months.</span>
                                             </div>
                                             <div class="service">
-                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Pro 
-                                                &nbsp;<span class="h6 mb-0"> - N180,000/year.</span>
+                                                <i data-feather="check-circle" class="fea icon-sm text-success mr-2"></i>Plus
+                                                &nbsp;<span class="h6 mb-0"> - N90,000/6months.</span>
                                             </div>
                                             
                                         </div>
@@ -407,7 +392,7 @@
                                             </div>
                                         </div>
                                         <div class="button-wrap">
-                                            <a href="reserve-seat.html" class="sign-up button">Get This Plan<i class="uil uil-arrow-right"></i></a>
+                                            <a href="reserve-seat.html" class="sign-up button">Book Now<i class="uil uil-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -444,7 +429,7 @@
                                             </div>
                                         </div>
                                         <div class="button-wrap">
-                                            <a href="reserve-seat.html" class="sign-up button">Get This Plan<i class="uil uil-arrow-right"></i></a>
+                                            <a href="reserve-seat.html" class="sign-up button">Book Now<i class="uil uil-arrow-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -460,34 +445,33 @@
                     <div class="row justify-content-center">
                         <div class="col-12">
                             <div class="row align-items-end mb-8 pb-4">
-                                <h3 class="title mb-4">Frequently Asked Questions
-                                    <span aria-hidden="true" class="css-1x6b7sj">.</span>
+                                <h3 class="title mb-4 ml-2" style="letter-spacing: 2px;">Frequently Asked Questions<span aria-hidden="true" class="css-1x6b7sj">.</span>
                                 </h3>
                             </div>
                         </div><!--end col-->
                     </div>
                     <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <img src="images/truspace/Pricepage/training.jpg" class="img-fluid" alt="">
+                        <div class="col-lg-6 mb-5">
+                            <img src="images/truspace/meetingroom6.jpeg" class="img-fluid" alt="">
                         </div><!--end col-->
     
                         <div class="col-lg-6">
                             <div class="faq-content">
-                                <div class="accordion" id="accordionExample2">
+                                <div class="accordion" id="accordionExample2" >
                                     <div class="card border rounded mb-2">
-                                        <a data-toggle="collapse" href="#collapsefour" class="faq position-relative" aria-expanded="true" aria-controls="collapsefour">
-                                            <div class="card-header border-0 bg-light p-3 pr-5" id="headingfour">
+                                        <a data-toggle="collapse" href="#collapsefour" class="faq position-relative" aria-expanded="true" aria-controls="collapsefour" >
+                                            <div class="card-header border-0 bg-light p-3 pr-5" id="headingfour" >
                                                 <div class="media">
                                                     <h6 class="title mb-0"> What is Truspace?</h6>
                                                 </div>
                                             </div>
                                         </a>
-                                        <div id="collapsefour" class="collapse show" aria-labelledby="headingfour" data-parent="#accordionExample2">
+                                        <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample2" >
                                             <div class="card-body">
                                                 <p class="text-muted mb-0 faq-ans">
                                                     Truspace is a coworking space that provides serviced workspaces to individuals and businesses who need a place to work, create, study, start a business or run an existing one. 
                                                     From private offices to shared desk spaces to virtual office packages, we have a solution for everyone. <br>
-                                                    Check out our <a href="#detailed-plans">plans</a> to find one that works for you.
+                                                    Check out our <span class="font-weight-bold"><a href="#detailed-plans">plans</a></span> to find one that works for you.
                                                     We have a fully equipped meeting room and functional kitchenette for your use as well and our training space is bookable for events at weekends. 
                                                 </p>
                                             </div>
@@ -522,7 +506,7 @@
                                             <div class="card-body">
                                                 <p class="text-muted mb-0 faq-ans">
                                                     Whether you need a workspace for a day or a month, for one person or for a team, we have a membership plan that fits your needs. 
-                                                    Check out our <a href="#detailed-plans">plans here</a> to work out a solution that fits your needs.  
+                                                    Check out our  <span class="font-weight-bold"><a href="#detailed-plans">plans</a></span>  to work out a solution that fits your needs.  
                                                  </p>
                                             </div>
                                         </div>
@@ -538,7 +522,7 @@
                                         </a>
                                         <div id="collapsetwo" class="collapse" aria-labelledby="headingtwo" data-parent="#accordionExample2">
                                             <div class="card-body">
-                                                <p class="text-muted mb-0 faq-ans">You can purchase a <a href="#detailed-plans"> 1-day pass </a> to get a feel for our workspace. We know you’ll love it here.
+                                                <p class="text-muted mb-0 faq-ans">You can purchase a <span class="font-weight-bold"><a href="#detailed-plans"> 1-day pass </a></span>  to get a feel for our workspace. We know you’ll love it here.
                                                 </p>
                                             </div>
                                         </div>
@@ -557,7 +541,7 @@
                                                 <p class="text-muted mb-0 faq-ans">Coworking is a concept whereby you pay for daily, monthly or yearly access to a functional workspace shared with other individuals,
                                                      either with similar interests or from diverse backgrounds depending on the vision and vibe of the space.
                                                      It offers a convenient and cost-effective alternative to working from home for individuals, and to high running costs for start-ups and small businesses. Most coworking spaces offer a variety of workstations and
-                                                      flexible membership plans so you should be able to find a one that works for you from our <a href="#detailed-plans">plans.</a>
+                                                      flexible membership plans so you should be able to find a one that works for you from our <span class="font-weight-bold"><a href="#detailed-plans">plans.</a></span>
                                                 </p>
                                             </div>
                                         </div>
@@ -574,7 +558,8 @@
                                         <div id="collapsesix" class="collapse" aria-labelledby="headingtwo" data-parent="#accordionExample2">
                                             <div class="card-body">
                                                 <p class="text-muted mb-0 faq-ans">
-                                                    Yes, absolutely! Our meeting room and multipurpose training space are available to both members and non-members to host events. Learn <a href="#detailed-plans">more here</a> or call us on <a href="tel:+234903002705">09030002705</a> to discuss the details. 
+                                                    Yes, absolutely! Our meeting room and multipurpose training space are available to both members and non-members to host events. Learn <span class="font-weight-bold"><a href="#detailed-plans">more here</a></span> 
+                                                    or call us on <span class="font-weight-bold"><a href="tel:+234903002705">09030002705</a></span>  to discuss the details. 
                                                 </p>
                                             </div>
                                         </div>
@@ -603,7 +588,11 @@
                         </div>
                 </div>
                </section>
-               <a href="https://wa.me/+234903002705" target="_blank" class="float" target="_blank">
+
+               <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.6111479659953!2d3.3700545142667147!3d6.57066252443742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93b71a19126b%3A0x89be414f23ed98d8!2sTruspace%20Coworking!5e0!3m2!1sen!2sng!4v1630941949752!5m2!1sen!2sng" width="" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+               <a href="https://wa.me/+2349030002705" target="_blank" class="float" target="_blank">
                 <i class="fa fa-whatsapp my-float"></i>
                 </a>      
            
@@ -631,12 +620,84 @@
                                     <ul class="list-unstyled footer-list mt-4">
                                         <ul class="list-unstyled footer-list mt-4">
                                             <li class="nav-item">
-                                                <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Home</a></li>
+                                                <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Who We Are</a></li>
                                                 <li class="nav-item">
                                                     <a href="#detailed-plans" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Plans</a></li>
                                                     <li class="nav-item">
-                                                        <a href="#faq" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Faqs</a></li>
-                                                   
+                                                        <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Testimonials</a></li>
+                                                <li class="nav-item">
+                                                    <a href="index.html" class="nav-link scrollTo"><i class="mdi mdi-chevron-right mr-1"></i>Gallery</a></li>
+                                                    <div class="buy-button">
+                                                        <button class="btn btn-primary book-seat" class="open-button" onclick="covidForm()">Covid-19 Response</button>
+                                                        </div>
+                                                           <!--book a tour form-->
+                  <div class="form-popup2" id="formCovid">
+                    <form action="" class="form-container2">
+                        
+                        <h5>
+                            Maintaining A Safe Workspace for Our Community</h5>
+                            <p>As the COVID-19 pandemic continues to impact daily life, we remain committed to providing our community with a safe and hygienic work environment for all. </p>
+                          <div class="row">
+                                  <div class="col-md-6">
+                                      <div class="form-group position-relative">
+                                        <div class="card feature border-0 bg-transparent text-center">
+                                            <span class="text-primary h2"><i class="fa fa-thermometer-full"></i></span>
+                                          <label class="font-weight-bold">Temperature checks at the entrance to the building.</label>
+                                         
+                                        </div>
+                                      </div>
+                                  </div><!--end col-->
+                                  <div class="col-md-6">
+                                      <div class="form-group position-relative">
+                                        <div class="card feature border-0 bg-transparent text-center">
+                                            <span class="text-primary h2"> <i class='bx bxs-face-mask'></i></span>
+                                          <label class="font-weight-bold" for="name">Usage of face masks while in the building.</label>
+                                         
+                                          </div>
+                                      </div>
+                                  </div><!--end col-->
+                                  <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                      <div class="card feature border-0 bg-transparent text-center">
+                                        <span class="iconify h2"  data-icon="mdi:hand-wash-outline" style="margin-left: 3.8em;"></span>
+                                        <label class="font-weight-bold" for="name">Promoting frequent handwashing, use of hand sanitisers provided at key areas and good personal respiratory hygiene.</label>
+                                       
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                      <div class="card feature border-0 bg-transparent text-center">
+                                        <span class="iconify h2" data-icon="fa-solid:people-arrows" style="margin-left: 3.6em;"></span>
+                                        <label class="font-weight-bold" for="name">Physical distancing within the workspaces and offices.</label>
+                                       
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                      <div class="card feature border-0 bg-transparent text-center">
+                                          <span class="text-primary h2"><i class="uil uil-sanitizer"></i></span>
+                                        <label class="font-weight-bold" for="name">Frequent sanitisation of high touchpoint areas, surfaces and workspaces to meet global health and safety regulations.</label>
+                                       
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-md-6">
+                                    <div class="form-group position-relative">
+                                      <div class="card feature border-0 bg-transparent text-center">
+                                          <span class="text-primary h2"><i class="fa fa-clipboard" ></i></span>
+                                        <label class="font-weight-bold" for="name">Posters placed at strategic locations to support and remind our visitors and members on how to conduct business safely.</label>
+                                       
+                                        </div>
+                                    </div>
+                                </div><!--end col-->      
+                        </div>
+                      
+                        <button type="button" class="cancel" onclick="covidClose()" id="close2">X</button> 
+                      </form>
+                  </div>  
+                        
                                 </div><!--end col-->
             
                                 <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
@@ -659,7 +720,7 @@
                 <div class="container text-center">
                     <div class="row justify-content-center">
                         <div class="col-12">
-                            <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace.All Rights Reserved</span></p>
+                            <p class="mb-0">© 2021 <span class="h6 mb-0">Truspace. All Rights Reserved.</span></p>
                         </div><!--end col-->
                     </div><!--end row-->
                 </div><!--end container-->
@@ -679,6 +740,7 @@
         <script src="js/scrollspy.min.js"></script>
         <!-- Icon -->
         <script src="js/feather.min.js"></script>
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
         <!-- Main Js -->
         <script src="js/app.js"></script>
     </body>

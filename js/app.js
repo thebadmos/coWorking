@@ -106,7 +106,7 @@
     feather.replace()
 }(jQuery)
 
-
+/* BOOKATour */
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -115,5 +115,11 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-/**gallery */
+/**covidForm */
+function covidForm(){
+    document.getElementById("formCovid").style.display = "block";
+}
+function covidClose() {
+    document.getElementById("formCovid").style.display = "none";
+  }
 
