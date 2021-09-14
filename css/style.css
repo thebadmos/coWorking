@@ -221,7 +221,9 @@ p {
   .margin-top-100 {
     margin-top: 100px;
   }
- 
+  .iconify{
+    margin-right: 2em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -292,8 +294,9 @@ h6 {
 }
 
 .display-4 {
-  font-size: 56px !important;
+  font-size: 50px !important;
   color:  #fff;
+  margin-top: 2em;
 }
 
 .bg-primary {
@@ -1060,7 +1063,7 @@ a.text-footer:hover, a.text-footer:focus {
   outline: none;
   text-decoration: none;
   font-size: 16px;
-  letter-spacing: 0.5px;
+  /* letter-spacing: 0.5px; */
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 600;
@@ -2089,7 +2092,7 @@ button:not(:disabled) {
   position:fixed;
 	width:60px;
 	height:60px;
-	bottom:40px;
+	bottom:80px;
 	left:40px;
 	background-color:#25d366;
 	color:#FFF;
@@ -2695,8 +2698,12 @@ button:not(:disabled) {
   #topnav .buy-button .login.login-light:hover {
     color: #5f9514!important;
   }
-  .img-cap-effect #img-box{
+  #img-box{
     margin-bottom: 6em;
+    padding-right: 2em;
+  }
+  .img-cap-effect:before{
+  display: none;
   }
   .firstImage #img-box2{
    height: 350px;
@@ -2710,11 +2717,14 @@ button:not(:disabled) {
   }
 
   .form-popup2 .form-container2{
-    margin-top:-23em;
+    margin-top:-21em;
     width: 300px;
   }
   .form-container2 #close2{
-    margin-top:-70em;
+    margin-top:-66em;
+  }
+  .carousel-indicators{
+    display: none;
   }
  
 }
@@ -2764,7 +2774,7 @@ button:not(:disabled) {
 }
 
 .bg-half-260 {
-  padding: 260px 0;
+  padding: 230px 0;
   background-size: cover;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -3053,10 +3063,10 @@ button:not(:disabled) {
   align-items: center;
   }
   .form-popup2{
-    top: -17em;
+    top: -8em;
     margin-right: 2em;
     font-size: 15px;
-    border: 2px solid #62bd19;
+    border: 1px solid #62bd19;
   }
 .form-popup h3,.form-popup2 h5{
   text-align: center;
@@ -3082,10 +3092,13 @@ button:not(:disabled) {
   }
 
   .form-container2{
-    width: 600px;
-    padding: 20px;
-    margin-top: 2em;
+    width: 650px;
+    /* padding: 15px; */
+    margin-top: .5em;
+  align-items: center;
   background-color: white;
+   
+   
   }
 
 
@@ -3106,11 +3119,11 @@ button:not(:disabled) {
   position: absolute;
   margin-top: -23em;
   right: 5px;
-  background-color: red;
+  background-color:  #62bd19;
   }
 
   #close2{
-    margin-top: -40em;
+    margin-top: -30em;
     right: 7px;
   }
 
@@ -3153,9 +3166,9 @@ button:not(:disabled) {
   width: 100%;
   font-size: 0;
   height: 20px;
- /* top:185px; */
+ top:195px;
   padding: 0 5px;
-  display: block;
+  /* display: block; */
   overflow-x: auto;
   overflow-y: hidden;
   position: absolute;
@@ -3545,17 +3558,18 @@ button:not(:disabled) {
   bottom: -10px;
   border: 1px solid #62bd19;
   height: 300px;
+  /* width: 280px; */
   margin-top: 3em;
   border-radius: 10px;
-  margin-left: -0.1em;
-  margin-right: 1.3em;
+  margin-left: 1.5em;
+  /* margin-right: 1.3em; */
  
 
 }
 
 #img-box{
 margin-top: 3.5em;
-width: 500px;
-margin-right: 3em;
+width: 380px;
 height: 290px;
+margin-left: 1.5em;
 }
