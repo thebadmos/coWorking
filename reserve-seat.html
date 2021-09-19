@@ -52,7 +52,10 @@
                         <button class="btn btn-primary book-seat" class="open-button" onclick="openForm()">Book A Tour</button>
                         </div>
                         <!--book a tour form-->
-                        <div class="alert">Your Information has been sent</div>
+                        <div class="alert">
+                            <h4>Thank You!</h4>
+                            We've received your request and will call you back within 48 hours.
+                        </div>
                         <div class="form-popup" id="myForm">
                           <form action="" class="form-container" id="tourForm">
                               
@@ -126,6 +129,14 @@
                                               <input name="date" type="date" class="form-control bg-white" id="date" required placeholder="Pick a date for the tour">
                                           </div> 
                                       </div><!--end col--> 
+                                      <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you<br>
+                                                 the information you need. Your personal information will be kept strictly <br>confidential and will not be sold, reused,
+                                                 rented, loaned or otherwise <br>disclosed to any third party.
+                                            </label><br>
+                                        </div> 
+                                    </div><!--end col--> 
                             </div>
                             <button type="submit" id="submit" name="send"  class="btn">Submit</button>
                             <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
@@ -180,52 +191,56 @@
            
         </section><!--end section-->
         <!-- Hero End -->
-
+    <!--book a tour form-->
+    <div class="alert">
+        <h4>Thank You!</h4>
+        We've received your request and will call you back within 48 hours.
+    </div>
             <div class="container mt-50 mt-50" id="reserve">
                 <div class="row justify-content-center mb-4">
                     <div class="col-lg-8 col-12 mt-4 pt-2">
                         <h3><span class="font-weight-bold">Kindly fill in your details below</span>
                         </h3>
                         <div class="p-4 rounded bg-light shadow">
-                            <div class="alert">Your Information has been sent</div>
+                           
                             <form id="bookingForm">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
                                             <label class="font-weight-bold" for="name">Full Name :</label>
-                                            <input name="name" id="Fname" type="text" class="form-control bg-white" required placeholder="Full Name :">
+                                            <input name="name" id="name" type="text" class="form-control bg-white" required placeholder="Full name">
                                         </div>
                                     </div><!--end col-->
 
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
-                                            <label class="font-weight-bold" for="name2">Role:</label>
+                                            <label class="font-weight-bold" for="name">Role:</label>
                                             <input name="name" id="role" type="text" class="form-control bg-white" required placeholder="Role :">
                                         </div>
-                                    </div><!--end col-->
+                                    </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="number">Phone No. : </label>
-                                            <input name="number" type="number" class="form-control bg-white" id="phone" required placeholder="Phone :">
+                                            <input name="number" type="tel" class="form-control bg-white" id="phoneN" required placeholder="Phone Number :">
                                         </div> 
-                                    </div><!--end col--> 
+                                    </div>
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
                                             <label class="font-weight-bold" for="email">Your Email :</label>
-                                            <input name="email" id="email" type="email" class="form-control bg-white" required placeholder="Your email :">
+                                            <input name="name" id="emailA" type="email" class="form-control bg-white" required placeholder="Email Address:">
                                         </div> 
                                     </div><!--end col-->
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Company Name / StartUp Name : </label>
-                                            <input name="text" id="company" type="text" class="form-control bg-white" required placeholder="Your Company Name :">
+                                            <input name="name" id="comp" type="text" class="form-control bg-white" required placeholder="Company Name">
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Business Sector / Industry : </label>
-                                            <input name="text" id="sector" type="text" class="form-control bg-white" required placeholder="Your Business Sector :">
+                                            <input name="text" id="sector" type="text" class="form-control bg-white" required placeholder="Business Sector :">
                                         </div>
                                     </div><!--end col-->
                                     
@@ -245,7 +260,7 @@
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label class="font-weight-bold">What plan are you interested in :</label>
-                                            <select class="form-control custom-select bg-white" id="typeSpace" required>
+                                            <select class="form-control custom-select bg-white" id="typeSpaces" required>
                                                 <option selected value="select">-Select-</option>
                                                 <option value="daypass">1-Day Pass</option>
                                                 <option value="hotdesk">Hot Desk</option>
@@ -269,7 +284,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Commencement Date: </label>
-                                            <input name="date" type="text" class="flatpickr flatpickr-input form-control bg-white" required id="checkin-date">
+                                            <input name="date" type="datetime" class="flatpickr flatpickr-input form-control bg-white" required id="checkin-date">
                                         </div>
                                     </div><!--end col-->
                                  
@@ -279,6 +294,14 @@
                                             <textarea name="comments" id="comments" rows="4" class="form-control bg-white" required  placeholder="Your Message :"></textarea>
                                         </div>
                                     </div><!--end col-->
+                                    <div class="col-lg-12">
+                                        <div class="form-group">
+                                            <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you
+                                                 the information you need.<br> Your personal information will be kept strictly confidential and will not be sold, reused,
+                                                 rented, loaned or otherwise disclosed to any third party.
+                                            </label><br>
+                                        </div> 
+                                    </div><!--end col--> 
                                 </div><!--end row-->
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
@@ -402,7 +425,7 @@
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
                                 <h5 class="text-light footer-head">CONTACT US</h5>
                                 <ul class="list-unstyled footer-list mt-4">
-                                  <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="#" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
+                                  <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.6111479659953!2d3.3700545142667147!3d6.57066252443742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93b71a19126b%3A0x89be414f23ed98d8!2sTruspace%20Coworking!5e0!3m2!1sen!2sng!4v1630941949752!5m2!1sen!2sng" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
                                 <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot"> +2349030002705
                             <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
                             <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">Monday-Friday : <div id="" style="margin-left: 1.5em;">

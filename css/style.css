@@ -66,13 +66,14 @@ body::-webkit-scrollbar-thumb {
 /*testimonial*/
 
 .alert{
-  text-align: center;
-  padding: 10px;
+  text-align: center; 
+  /* padding: 10px; */
   background: #79c879;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 5px; 
   display: none;
 }
+
 
 ::selection {
   background: #465467;
@@ -2709,7 +2710,7 @@ button:not(:disabled) {
    height: 350px;
   }
   #commu .detailed-plan{
-    height: 500px;
+    height: 600px;
   }
   
   .form-container #close{
@@ -3085,12 +3086,12 @@ button:not(:disabled) {
 }
 
 /* Add styles to the form container */
-.form-container {
+.form-container{
   max-width: 500px;
   padding: 10px;
   background-color: white;
   }
-
+ 
   .form-container2{
     width: 650px;
     /* padding: 15px; */
@@ -3111,13 +3112,13 @@ button:not(:disabled) {
   border: none;
   cursor: pointer;
   width: 100%;
-  margin-top:10px;
+  /* margin-top:10px; */
   opacity: 0.8;
 }
 
 #close, #close2{
   position: absolute;
-  margin-top: -23em;
+  margin-top: -30em;
   right: 5px;
   background-color:  #62bd19;
   }
