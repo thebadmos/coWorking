@@ -45,10 +45,10 @@ function submitForm(e){
      //show alert
       document.querySelector('.alert').style.display = 'block';
       
-      //Hide alert after 3 seconds
+      //Hide alert after 6 seconds
       setTimeout(function(){
         document.querySelector('.alert').style.display = 'none';
-      },3000);
+      },6000);
 
        //clear form
       document.getElementById('bookingForm').reset();
