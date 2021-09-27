@@ -2725,7 +2725,7 @@ button:not(:disabled) {
   #commu .detailed-plan{
     height: 480px;
   }
-  
+
   .form-container #close{
     margin-top: -47em;
   }
@@ -3092,18 +3092,17 @@ button:not(:disabled) {
 .form-popup h3,.form-popup2 h5{
   text-align: center;
   font-family:  sans-serif;
-
 }
 .form-popup2 p{
   text-align: center;
   font-size: 15px;
   color: rgb(132, 146, 166);
- 
-}
+ }
 .form-popup2 label{
   font-size: 15px;
   color: #212529;
 }
+
 
 /* Add styles to the form container */
 .form-container{
