@@ -9,11 +9,21 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
   
  //Reference messages collection
 var messagesRef = firebase.database().ref('messages');
- 
+// const created = firebase.firestore.Timestamp;
+// // firebaseRef = firebase.database().ref();
+// // firebaseRef.set({
+// //   createdAt: firebase.database.ServerValue.TIMESTAMP
+// // });
 
+
+
+
+
+ 
 //listen for form submit
 document.getElementById('tourForm'),addEventListener('submit',submitForm);
 //submit form
@@ -28,10 +38,15 @@ function submitForm(e){
      var company = getInputVal('company');
      var spaceInterest = getInputVal('spaceInterest');
      var typeSpace = getInputVal('typeSpace');
-     var date = getInputVal('date');
+     var bookingDate = getInputVal('date');
+     var timeStamp = getInputVal('timeStamp')
+
+
+   
+   
       
      //save message
-     saveMessage(Fname,Lname,phone,email,company,spaceInterest,typeSpace,date);
+     saveMessage(Fname,Lname,phone,email,company,spaceInterest,typeSpace,bookingDate,timeStamp);
 
      //show alert
       document.querySelector('.alert').style.display = 'block';
@@ -51,7 +66,7 @@ function submitForm(e){
     }
     
      //save message to firebase
-     function saveMessage(Fname,Lname,phone,email,company,spaceInterest,typeSpace,date){
+     function saveMessage(Fname,Lname,phone,email,company,spaceInterest,typeSpace,bookingDate,timeStamp){
          var newMessageRef = messagesRef.push();
          newMessageRef.set({
              Fname: Fname,
@@ -61,7 +76,9 @@ function submitForm(e){
              company: company,
              spaceInterest: spaceInterest,
              typeSpace:typeSpace,
-             date: date
+             bookingDate : bookingDate,
+             timeStamp : timeStamp
+
     });
      }
     

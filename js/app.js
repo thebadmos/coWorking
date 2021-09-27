@@ -114,6 +114,9 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+function closeAlert() {
+    document.getElementById("alert").style.display = "none";
+  }
 
 /**covidForm */
 function covidForm(){
@@ -122,4 +125,4 @@ function covidForm(){
 function covidClose() {
     document.getElementById("formCovid").style.display = "none";
   }
-
+  document.getElementById("timeStamp").valueAsDate = new Date();

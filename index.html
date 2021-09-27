@@ -55,17 +55,14 @@
                   <button class="btn btn-primary book-seat" class="open-button" onclick="openForm()">Book A Tour</button>
                   </div>
                   <!--book a tour form-->
-                    <!-- <div class="alert">
-                      <h4>Thank You!</h4>
-                      We've received your request and will call you back within 48 hours.
-                  </div> -->
- 
+               
                   <div class="form-popup" id="myForm">
                     <form action="" class="form-container" id="tourForm">
                         
-                      <h3>BOOK A TOUR</h3>
+                      <h3 style="margin-left: 2em;">BOOK A TOUR</h3>
+                      <div class="container">
                         <div class="row">
-                                <div class="col-md-6">
+                         <div class="col-md-6">
                                     <div class="form-group position-relative">
                                         <label class="font-weight-bold" for="name">First Name :</label>
                                         <input name="name" id="Fname" type="text" class="form-control bg-white" required placeholder="Enter your first name">
@@ -135,11 +132,15 @@
                                 </div><!--end col--> 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you<br>
-                                             the information you need. Your personal information will be kept strictly <br>confidential and will not be sold, reused,
-                                             rented, loaned or otherwise <br>disclosed to any third party.
+                                        <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you
+                                             the information you need. Your personal information will be kept strictly confidential and will not be sold, reused,
+                                             rented, loaned or otherwise disclosed to any third party.
                                         </label><br>
                                     </div> 
+                                </div>  </div><!--end col--> 
+                                <div class="col-md-6" id="timeS">
+                                        <input name="timeStamp" type="date" id="timeStamp">
+                    
                                 </div><!--end col--> 
                       </div>
                       <button type="submit" id="submit" name="send"  class="btn" onclick="closeForm()">Submit</button>
@@ -231,9 +232,12 @@
             </div><!--end carousel-->
         </section><!--end section-->
         <!-- Hero End -->
-        <div class="alert">
+        <div class="alert" id="alert">
             <h4>Thank You!</h4>
-            We've received your request and will call you back within 48 hours.
+            <p>We've received your request and will get back to you shortly. </p>
+            <div class="buy-button" style="margin-top: 2em;">
+                <a class="btn btn-primary book-seat" onclick="closeAlert()">Cancel</a>
+                </div>
         </div>
         <!-- Shape Start -->
         <div class="position-relative">
@@ -301,11 +305,11 @@
               <div style="background-color: #b0f776;" id="commu">
                  
                             <div class="container">
-                                <div class="row ">
+                                <!-- <div class="row ">
                                     <div class="col-lg-5 col-md-6 mt-3">
                                         <div class="firstImage">
                                             <img src="images/truspace/Pricepage/IMG-20210511-WA0035e.jpg" class="img-fluid rounded shadow-md" alt="" id="" style="height: 370px;" >
-                                    </div><!--end col-->
+                                    </div>
                                 </div>
                                     <div class="col-lg-7 col-md-6 mb-8 pb-8 mt-3">
                                         <div class="detailed-plan">
@@ -330,9 +334,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div><!--end row-->
-                            </div>
-                                <!-- <div class="row">
+                                </div>
+                            </div> -->
+                                <div class="row">
                                    
                                 <div class="col-lg-8 col-md-12 mt-2 pt-2 px-0">
                                     <div class="detailed-plan">
@@ -366,7 +370,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div> 
                            
             <!-- Start Services & Spaces -->
         <section class="section bg-light" id="services">
@@ -495,7 +499,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner" style="height: 400px;">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="images/FilteredImages/1.jpg" alt="First slide">
               </div>
@@ -750,7 +754,7 @@
                     <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <h5 class="text-light footer-head">CONTACT US</h5>
                         <ul class="list-unstyled footer-list mt-4">
-                            <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="https://goo.gl/maps/ZbDuxySSPx5JNLAb6" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
+                            <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="page-pricing.html" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
                                 <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot"> +2349030002705
                             <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
                             <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">Monday-Friday : <div id="" style="margin-left: 1.5em;">
@@ -784,6 +788,7 @@
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/scrollspy.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
         <!-- Magnific popup -->
         <script src="js/jquery.magnific-popup.min.js"></script>
         <script src="js/isotope.js"></script>

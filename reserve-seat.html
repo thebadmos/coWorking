@@ -52,9 +52,12 @@
                         <button class="btn btn-primary book-seat" class="open-button" onclick="openForm()">Book A Tour</button>
                         </div>
                         <!--book a tour form-->
-                        <div class="alert">
+                        <div class="alert" id="alert">
                             <h4>Thank You!</h4>
-                            We've received your request and will call you back within 48 hours.
+                            <p>We've received your request and will get back to you shortly. </p>
+                            <div class="buy-button" style="margin-right: 12em;">
+                                <a class="btn btn-primary book-seat" href="index.html">Go to Homepage</a>
+                                </div>
                         </div>
                         <div class="form-popup" id="myForm">
                           <form action="" class="form-container" id="tourForm">
@@ -131,12 +134,16 @@
                                       </div><!--end col--> 
                                       <div class="col-md-12">
                                         <div class="form-group">
-                                            <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you<br>
-                                                 the information you need. Your personal information will be kept strictly <br>confidential and will not be sold, reused,
-                                                 rented, loaned or otherwise <br>disclosed to any third party.
+                                            <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you
+                                                 the information you need. Your personal information will be kept strictly confidential and will not be sold, reused,
+                                                 rented, loaned or otherwise disclosed to any third party.
                                             </label><br>
                                         </div> 
+                                        <div class="col-md-6" id="timeS">
+                                            <input name="timeStamp" type="date" id="timeStamp">
+                        
                                     </div><!--end col--> 
+
                             </div>
                             <button type="submit" id="submit" name="send"  class="btn">Submit</button>
                             <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
@@ -192,9 +199,12 @@
         </section><!--end section-->
         <!-- Hero End -->
     <!--book a tour form-->
-    <div class="alert">
+    <div class="alert" id="alert">
         <h4>Thank You!</h4>
-        We've received your request and will call you back within 48 hours.
+        <p>We've received your request and will get back to you shortly. </p>
+        <div class="buy-button" style="margin-top: 2em;">
+            <a class="btn btn-primary book-seat" href="index.html">Go to Homepage</a>
+            </div>
     </div>
             <div class="container mt-50 mt-50" id="reserve">
                 <div class="row justify-content-center mb-4">
@@ -302,7 +312,11 @@
                                             </label><br>
                                         </div> 
                                     </div><!--end col--> 
-                                </div><!--end row-->
+                                    <div class="col-md-6" id="timeS">
+                                        <input name="timeStamp" type="date" id="timeStamp">
+                    
+                                    </div><!--end col--> 
+                                
                                 <div class="row">
                                     <div class="col-sm-12 text-center">
                                         <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block" value="Submit">
@@ -425,7 +439,7 @@
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
                                 <h5 class="text-light footer-head">CONTACT US</h5>
                                 <ul class="list-unstyled footer-list mt-4">
-                                  <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="https://goo.gl/maps/ZbDuxySSPx5JNLAb6" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
+                                  <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="page-pricing.html" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
                                 <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot"> +2349030002705
                             <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
                             <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">Monday-Friday : <div id="" style="margin-left: 1.5em;">

@@ -36,6 +36,7 @@ function submitForm(e){
      var website = getInputVal('website');
      var checkDate = getInputVal('checkin-date');
      var sector = getInputVal('sector');
+   
     
       
      //save message
