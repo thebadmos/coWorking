@@ -52,103 +52,108 @@
                         <button class="btn btn-primary book-seat" class="open-button" onclick="openForm()">Book A Tour</button>
                         </div>
                         <!--book a tour form-->
-                        <div class="alert" id="alert">
+                        <!-- <div class="alert" id="alert">
                             <h4>Thank You!</h4>
                             <p>We've received your request and will get back to you shortly. </p>
                             <div class="buy-button" style="margin-right: 12em;">
                                 <a class="btn btn-primary book-seat" href="index.html">Go to Homepage</a>
                                 </div>
-                        </div>
+                        </div> -->
                         <div class="form-popup" id="myForm">
-                          <form action="" class="form-container" id="tourForm">
-
-           <h3 style="margin-left: 1.5em;">BOOK A TOUR</h3>
-                      <div class="container">
-                        <div class="row">
-                         <div class="col-md-6">
-                                    <div class="form-group position-relative">
-                                        <label class="font-weight-bold" for="name">First Name :</label>
-                                        <input name="name" id="Fname" type="text" class="form-control bg-white" required placeholder="Enter your first name">
-                                    </div>
-                                </div><!--end col-->
-                                <div class="col-md-6">
-                                    <div class="form-group position-relative">
-                                        <label class="font-weight-bold" for="name">Last Name :</label>
-                                        <input name="name" id="Lname" type="text" class="form-control bg-white" required placeholder="Enter your last name">
-                                    </div>
-                                </div><!--end col-->
-
-
-                                <div class="col-md-4">
-                                    <div class="form-group position-relative">
-                                        <label class="font-weight-bold" for="name2">Company Name:</label>
-                                        <input name="name" id="company" type="text" class="form-control bg-white" required placeholder="Enter your company name">
-                                    </div>
-                                </div><!--end col-->
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="font-weight-bold" for="number">Email Address : </label>
-                                        <input name="name" id="email" type="email" class="form-control bg-white" required placeholder="Enter your email address">
-                                    </div> 
-                                </div><!--end col--> 
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="font-weight-bold">I need a space for :</label>
-                                        <select class="form-control custom-select bg-white" id="spaceInterest">
-                                            <option selected value="Findworkspace">-Select-</option>
-                                            <option value="1person" > 1 person</option>
-                                            <option value="2-4people" > 2-4 people</option>
-                                            <option value="5-9people" > 5-9 people</option>
-                                            <option value="10plus" > 10+ people</option>
-                                        </select>
-                                    </div>
-                                </div><!--end col-->
-
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="font-weight-bold">What plan are you interested in :</label>
-                                        <select class="form-control custom-select bg-white" id="typeSpace" required>
-                                            <option selected value="select">-Select-</option>
-                                            <option value="daypass">A Day-Pass</option>
-                                            <option value="hotdesk">Hot Desk</option>
-                                            <option value="privateoffice" >Private Office</option>
-                                            <option value="virtualoffice" >Virtual Office</option>
-                                            <option value="dedicateddesk" >Dedicated Desk</option>
-                                            <option value="meetingroom" >Meeting Room</option>
-                                            <option value="trainingroom">Training Workspaces</option>
-                                        </select>
-                                    </div>
-                                </div><!--end col-->
+                            <form action="https://getform.io/f/17daeaa5-5ef4-4764-b202-4c848ec15ebd" method="POST" 
+                                class="form-container" enctype="multipart/form-data">
                                 
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="font-weight-bold" for="number">Phone Number : </label>
-                                        <input name="number" type="number" class="form-control bg-white" id="phone" required placeholder="Enter your phone number">
-                                    </div> 
-                                </div><!--end col--> 
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label class="font-weight-bold" for="number">Pick a date:</label>
-                                        <input name="date" type="date" class="form-control bg-white" id="date" required placeholder="Pick a date for the tour">
-                                    </div> 
-                                </div><!--end col--> 
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you
-                                             the information you need. Your personal information will be kept strictly confidential and will not be sold, reused,
-                                             rented, loaned or otherwise disclosed to any third party.
-                                        </label><br>
-                                    </div> 
-                                </div>  </div><!--end col--> 
-                                <div class="col-md-6" id="timeS">
-                                        <input name="timeStamp" type="date" id="timeStamp">
-                    
-                                </div><!--end col--> 
-                      </div>
-                      <button type="submit" id="submit" name="send"  class="btn" onclick="closeForm()">Submit</button>
-                      <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
-                    </form>
+                              <h3 style="margin-left: 1.5em;">BOOK A TOUR</h3>
+                              <div class="container">
+                                <div class="row">
+                                 <div class="col-md-6">
+                                            <div class="form-group position-relative">
+                                                <label class="font-weight-bold" for="name">First Name :</label>
+                                                <input name="first" id="Fname" type="text" class="form-control bg-white" required placeholder="Enter your first name">
+                                            </div>
+                                        </div><!--end col-->
+                                        <div class="col-md-6">
+                                            <div class="form-group position-relative">
+                                                <label class="font-weight-bold" for="name">Last Name :</label>
+                                                <input name="last" id="Lname" type="text" class="form-control bg-white" required placeholder="Enter your last name">
+                                            </div>
+                                        </div><!--end col-->
+        
+        
+                                        <div class="col-md-4">
+                                            <div class="form-group position-relative">
+                                                <label class="font-weight-bold" for="name2">Company Name:</label>
+                                                <input name="company" id="company" type="text" class="form-control bg-white" required placeholder="Enter your company name">
+                                            </div>
+                                        </div><!--end col-->
+        
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold" for="number">Email Address : </label>
+                                                <input name="email" id="email" type="email" class="form-control bg-white" required placeholder="Enter your email address">
+                                            </div> 
+                                        </div><!--end col--> 
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">I need a space for :</label>
+                                                <select class="form-control custom-select bg-white" id="spaceInterest" name="spaceInterest">
+                                                    <option selected value="Findworkspace">-Select-</option>
+                                                    <option value="1person" > 1 person</option>
+                                                    <option value="2-4people" > 2-4 people</option>
+                                                    <option value="5-9people" > 5-9 people</option>
+                                                    <option value="10plus" > 10+ people</option>
+                                                </select>
+                                            </div>
+                                        </div><!--end col-->
+        
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold">What plan are you interested in :</label>
+                                                <select class="form-control custom-select bg-white" id="typeSpace" name="typeSpace" required>
+                                                    <option selected value="select">-Select-</option>
+                                                    <option value="daypass">A Day-Pass</option>
+                                                    <option value="hotdesk">Hot Desk</option>
+                                                    <option value="privateoffice" >Private Office</option>
+                                                    <option value="virtualoffice" >Virtual Office</option>
+                                                    <option value="dedicateddesk" >Dedicated Desk</option>
+                                                    <option value="meetingroom" >Meeting Room</option>
+                                                    <option value="trainingroom">Training Workspaces</option>
+                                                </select>
+                                            </div>
+                                        </div><!--end col-->
+                                        
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold" for="number">Phone Number : </label>
+                                                <input name="phone" type="number" class="form-control bg-white" id="phone" required placeholder="Enter your phone number">
+                                            </div> 
+                                        </div><!--end col--> 
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="font-weight-bold" for="number">Pick a date:</label>
+                                                <input name="date" type="date" class="form-control bg-white" id="date" required placeholder="Pick a date for the tour">
+                                            </div> 
+                                        </div><!--end col--> 
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="vehicle1" class="font-weight-bold">All Information provided in this form will be used to contact you and give you
+                                                     the information you need. Your personal information will be kept strictly confidential and will not be sold, reused,
+                                                     rented, loaned or otherwise disclosed to any third party.
+                                                </label><br>
+                                            </div> 
+                                        </div>  </div><!--end col--> 
+                                        <!-- <div class="col-md-6" id="timeS">
+                                                <input name="timeStamp" type="date" id="timeStamp">
+                            
+                                        </div> -->
+                              </div>
+                              <button type="submit" class="btn">Submit</button>
+                              <!-- <button type="submit" id="submit" name="send"  class="btn" onclick="closeForm()">Submit</button> -->
+                              <button type="button" class="cancel" onclick="closeForm()" id="close">X</button> 
+                            </form>
+                        
+                          
+                             
                 
                            
                         </div>
@@ -207,52 +212,53 @@
                         </h3>
                         <div class="p-4 rounded bg-light shadow">
                            
-                            <form id="bookingForm">
+                            <!-- <form id="bookingForm"> -->
+                                <form action="https://getform.io/f/f8da6453-e2cc-481b-b759-ceb9f626e8ce"  method="POST" 
+                                class="form-container" enctype="multipart/form-data">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
                                             <label class="font-weight-bold" for="name">Full Name :</label>
-                                            <input name="name" id="name" type="text" class="form-control bg-white" required placeholder="Full name">
+                                            <input name="fullname" id="name" type="text" class="form-control bg-white" required placeholder="Full name">
                                         </div>
                                     </div><!--end col-->
 
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
                                             <label class="font-weight-bold" for="name">Role:</label>
-                                            <input name="name" id="role" type="text" class="form-control bg-white" required placeholder="Role :">
+                                            <input name="role" id="role" type="text" class="form-control bg-white" required placeholder="Role :">
                                         </div>
                                     </div>
 
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="number">Phone No. : </label>
-                                            <input name="number" type="tel" class="form-control bg-white" id="phoneN" required placeholder="Phone Number :">
+                                            <input name="phone" type="tel" class="form-control bg-white" id="phoneN" required placeholder="Phone Number :">
                                         </div> 
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group position-relative">
                                             <label class="font-weight-bold" for="email">Your Email :</label>
-                                            <input name="name" id="emailA" type="email" class="form-control bg-white" required placeholder="Email Address:">
+                                            <input name="email" id="emailA" type="email" class="form-control bg-white" required placeholder="Email Address:">
                                         </div> 
                                     </div><!--end col-->
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Company Name / StartUp Name : </label>
-                                            <input name="name" id="comp" type="text" class="form-control bg-white" required placeholder="Company Name">
+                                            <input name="company" id="comp" type="text" class="form-control bg-white" required placeholder="Company Name">
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Business Sector / Industry : </label>
-                                            <input name="text" id="sector" type="text" class="form-control bg-white" required placeholder="Business Sector :">
+                                            <input name="industry" id="sector" type="text" class="form-control bg-white" required placeholder="Business Sector :">
                                         </div>
                                     </div><!--end col-->
                                     
-                                 
-                                    <div class="col-md-6">
+                                 <div class="col-md-6">
                                         <div class="form-group">
                                             <label class="font-weight-bold">How big is your Team:</label>
-                                            <select class="form-control custom-select bg-white" id="numPeople" required>
+                                            <select class="form-control custom-select bg-white" id="numPeople" name="numPeople" required>
                                                 <option selected value="select">-Select-</option>
                                                 <option value="1person" > 1 person</option>
                                                 <option value="2-4people" > 2-4 people</option>
@@ -264,7 +270,7 @@
                                     <div class="col-md-6 col-12">
                                         <div class="form-group">
                                             <label class="font-weight-bold">What plan are you interested in :</label>
-                                            <select class="form-control custom-select bg-white" id="typeSpaces" required>
+                                            <select class="form-control custom-select bg-white" id="typeSpaces" name="typeSpaces" required>
                                                 <option selected value="select">-Select-</option>
                                                 <option value="daypass">1-Day Pass</option>
                                                 <option value="hotdesk">Hot Desk</option>
@@ -280,7 +286,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Company Website / Handle : </label>
-                                            <input name="text" id="website" type="text" class="form-control bg-white" required placeholder="Your Company Website :">
+                                            <input name="website" id="website" type="text" class="form-control bg-white" required placeholder="Your Company Website :">
                                         </div>
                                     </div><!--end col-->
 
@@ -288,7 +294,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group mb-4 mb-md-0">
                                             <label class="font-weight-bold"> Commencement Date: </label>
-                                            <input name="date" type="datetime" class="flatpickr flatpickr-input form-control bg-white" required id="checkin-date">
+                                            <input name="commencement" type="datetime" class="flatpickr flatpickr-input form-control bg-white" required id="checkin-date">
                                         </div>
                                     </div><!--end col-->
                                  
@@ -306,14 +312,8 @@
                                             </label><br>
                                         </div> 
                                     </div><!--end col--> 
-                                    <div class="col-md-6" id="timeS">
-                                        <input name="timeStamp" type="date" id="timeStamp">
-                    
-                                    </div><!--end col--> 
-                                
-                             
-                                    <div class="col-sm-12 text-center">
-                                        <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block" value="Submit">
+                             <div class="col-sm-12 text-center">
+                                        <input type="submit" class="btn btn-primary btn-block" value="Submit">
                                     </div><!--end col-->
                                 </div><!--end row-->
                             </form>
@@ -438,7 +438,7 @@
                             <div class="col-md-4 mt-4 pt-2 mt-sm-0 pt-sm-0">
                                 <h5 class="text-light footer-head">CONTACT US</h5>
                                 <ul class="list-unstyled footer-list mt-4">
-                                  <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a href="page-pricing.html" class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
+                                  <li><i data-feather="map-pin" class="fea icon-sm mr-2"></i><a class="text-foot">6, Prince Bode Oluwo Street, Mende, Maryland,<br>Lagos Nigeria.</a></li>
                                 <li><i data-feather="phone" class="fea icon-sm mr-2"></i><a href="tel:+234903002705" class="text-foot"> +2349030002705
                             <li><i data-feather="mail" class="fea icon-sm mr-2"></i><a href="mailto:info@truspace.ng" class="text-foot">info@truspace.ng</a></li>
                             <li><i data-feather="book" class="fea icon-sm mr-2"></i><a  class="text-foot">Monday-Friday : <div id="" style="margin-left: 1.5em;">
@@ -486,8 +486,8 @@
         <!-- Main Js -->
         <script src="js/app.js"></script>
         <!--Booking Js-->
-        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
-        <script src="js/booking.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>
+        <script src="js/booking.js"></script> -->
     </body>
 
 

@@ -58,7 +58,7 @@ function submitForm(e){
       },6000);
 
        //clear form
-      document.getElementById('tourForm').reset();
+      // document.getElementById('tourForm').reset();
     }
     // Function to get form values
     function getInputVal(id){
